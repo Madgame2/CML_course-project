@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authorization</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body class="authorization">
+    <div class="authorization_contaner">
+        <div style="grid-area: logo;" class="logo_contaner">
+            <a href="main_page.html" class="logo_flex">
+                <div class="logo">
+                    <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="35" cy="35.6801" r="35" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="logo">NAME_OF_SITE</div>
+            </a>
+        </div>
+        <div style="grid-area: user_status;" class="user_status">
+            <div >Нет акканта?</div>
+            <a href="sign_up.html">Зарегистрироватся→</a>
+        </div>
+        <div style="grid-area: main-area;" class="main-area">
+            <form action="">
+                <div class="main-area_contaner">
+                    <div style="grid-area: header;" class="header">Авторизация пользователя</div>
+                    <div style="grid-area: mail;" class="mail">
+                        <span>email</span>
+                        <input type="email">
+                    </div>
+                    <div style="grid-area: password;" class="password">
+                        <span>Пароль</span>
+                        <input type="password">
+                    </div>
+                    <div style="grid-area: forgot_password;" class="forgot_password">
+                        <span>Забыли пароль?</span>
+                        <a href="#" onclick="forgot_pasword()">Востановить</a>
+                    </div>
+                    <div style="grid-area: submit;" class="submit">
+                    <input type="submit" value="Авторизоватся">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="JS/authorization_scripts.js"></script>
+</body>
+</html>

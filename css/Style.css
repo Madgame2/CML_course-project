@@ -1,0 +1,451 @@
+body {
+  background-color: rgb(11, 11, 11);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+}
+header .navigation_menu {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 2px 15px 15px rgb(1, 0, 61);
+}
+header a .navigation_element {
+  margin: auto;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+header .selected {
+  background-color: #3D3D3D;
+}
+header a:hover .navigation_element {
+  margin: auto;
+  font-size: 18px;
+  color: #FFFFFF;
+  color: #1A58CE;
+}
+header .navigation_flex a:active {
+  background-color: #3D3D3D;
+  transition: all 0 0.5s ease;
+}
+header .user_element {
+  text-align: center;
+  margin: auto;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+header .user_bar_content a:hover {
+  color: #1A58CE;
+}
+header .user_bar_content a:hover .backet svg path {
+  stroke: #1A58CE;
+}
+header .search_bar {
+  width: 100%;
+  margin: auto;
+}
+header .search_bar form {
+  display: flex;
+}
+header .search_bar form input[type=search] {
+  width: 75%;
+  height: 40px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-right: 1%;
+  background-color: #A4A4A4;
+  font-size: 20px;
+}
+header .search_bar form input[type=search]:focus {
+  outline: none;
+}
+header .search_bar form button {
+  transition: 0.1s;
+  width: 22%;
+  height: 40px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 0;
+  font-size: 20px;
+  background-color: #3C3AB2;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+header .search_bar form button * {
+  margin: auto;
+}
+header .search_bar form button:hover {
+  transition: 0.1s;
+  background-color: #4946DC;
+}
+
+.main_container {
+  padding-top: 130px;
+}
+.main_container .background {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome_board_contaner {
+  color: #FFFFFF;
+}
+.welcome_board_contaner .name_of_site {
+  font-size: 96px;
+  font-weight: bold;
+}
+.welcome_board_contaner .tagline {
+  font-size: 64px;
+}
+.welcome_board_contaner .tagline span {
+  font-size: 24px;
+}
+
+.audio_contaner {
+  color: #FFFFFF;
+}
+.audio_contaner .header {
+  font-size: 48px;
+  margin-left: 40%;
+}
+.audio_contaner .audio_js * {
+  transition: transform 0.3s ease;
+}
+.audio_contaner .button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.audio_contaner .button img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+}
+.audio_contaner .button span {
+  position: relative;
+  margin-top: -25%;
+  font-size: 32px;
+}
+
+.video_contaner {
+  color: #FFFFFF;
+}
+.video_contaner .header {
+  font-size: 48px;
+  margin-left: -40%;
+}
+.video_contaner .video_js * {
+  transition: transform 0.3s ease;
+}
+.video_contaner .button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.video_contaner .button img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+}
+.video_contaner .button span {
+  position: relative;
+  margin-top: -25%;
+  font-size: 32px;
+}
+
+.footer_contaner {
+  color: #FFFFFF;
+}
+.footer_contaner .about_us span {
+  font-size: 24px;
+}
+.footer_contaner .support {
+  margin: auto;
+}
+.footer_contaner .support span {
+  font-size: 24px;
+}
+.footer_contaner .support a {
+  display: block;
+}
+.footer_contaner .contacts .header {
+  font-weight: bold;
+}
+.footer_contaner .contacts .params {
+  text-align: right;
+}
+
+.authorization, .sign_up {
+  background-color: #121212;
+}
+.authorization .authorization_contaner, .authorization .sign_up_contaner, .sign_up .authorization_contaner, .sign_up .sign_up_contaner {
+  margin-left: 2.5%;
+  margin-top: 1%;
+}
+.authorization .authorization_contaner .logo_contaner, .authorization .sign_up_contaner .logo_contaner, .sign_up .authorization_contaner .logo_contaner, .sign_up .sign_up_contaner .logo_contaner {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.authorization .authorization_contaner .logo_contaner .logo_flex, .authorization .sign_up_contaner .logo_contaner .logo_flex, .sign_up .authorization_contaner .logo_contaner .logo_flex, .sign_up .sign_up_contaner .logo_contaner .logo_flex {
+  justify-content: left;
+}
+.authorization .authorization_contaner .user_status, .authorization .sign_up_contaner .user_status, .sign_up .authorization_contaner .user_status, .sign_up .sign_up_contaner .user_status {
+  font-size: 18px;
+  justify-content: right;
+  margin-right: 20%;
+}
+.authorization .authorization_contaner .user_status div, .authorization .sign_up_contaner .user_status div, .sign_up .authorization_contaner .user_status div, .sign_up .sign_up_contaner .user_status div {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgba(255, 255, 255, 0.4);
+}
+.authorization .authorization_contaner .user_status a, .authorization .sign_up_contaner .user_status a, .sign_up .authorization_contaner .user_status a, .sign_up .sign_up_contaner .user_status a {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgb(255, 255, 255);
+}
+.authorization .authorization_contaner .user_status a:hover, .authorization .sign_up_contaner .user_status a:hover, .sign_up .authorization_contaner .user_status a:hover, .sign_up .sign_up_contaner .user_status a:hover {
+  color: rgb(26, 88, 206);
+}
+.authorization .authorization_contaner .main-area, .authorization .sign_up_contaner .main-area, .sign_up .authorization_contaner .main-area, .sign_up .sign_up_contaner .main-area {
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+  height: 70%;
+  background-color: #0B0B0B;
+  display: flex;
+  border-radius: 10%;
+  box-shadow: 0px 0px 83px 22px rgba(36, 24, 184, 0.25);
+}
+.authorization .authorization_contaner .main-area form, .authorization .sign_up_contaner .main-area form, .sign_up .authorization_contaner .main-area form, .sign_up .sign_up_contaner .main-area form {
+  width: 100%;
+  color: #FFFFFF;
+}
+.authorization .authorization_contaner .main-area form .header, .authorization .sign_up_contaner .main-area form .header, .sign_up .authorization_contaner .main-area form .header, .sign_up .sign_up_contaner .main-area form .header {
+  color: #FFFFFF;
+  margin: auto;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.authorization .authorization_contaner .main-area form .main-area_contaner div, .authorization .sign_up_contaner .main-area form .main-area_contaner div, .sign_up .authorization_contaner .main-area form .main-area_contaner div, .sign_up .sign_up_contaner .main-area form .main-area_contaner div {
+  margin-left: 12.5%;
+  margin-right: 13%;
+}
+.authorization .authorization_contaner .main-area form .main-area_contaner input:not([type=submit]), .authorization .sign_up_contaner .main-area form .main-area_contaner input:not([type=submit]), .sign_up .authorization_contaner .main-area form .main-area_contaner input:not([type=submit]), .sign_up .sign_up_contaner .main-area form .main-area_contaner input:not([type=submit]) {
+  background-color: #0B0B0B;
+  border: solid #FFFFFF 1px;
+  height: 40%;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding-left: 2.5%;
+  font-size: 20px;
+}
+.authorization .authorization_contaner .main-area form .main-area_contaner .submit, .authorization .sign_up_contaner .main-area form .main-area_contaner .submit, .sign_up .authorization_contaner .main-area form .main-area_contaner .submit, .sign_up .sign_up_contaner .main-area form .main-area_contaner .submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+.authorization .authorization_contaner .main-area form .main-area_contaner .submit input[type=submit], .authorization .sign_up_contaner .main-area form .main-area_contaner .submit input[type=submit], .sign_up .authorization_contaner .main-area form .main-area_contaner .submit input[type=submit], .sign_up .sign_up_contaner .main-area form .main-area_contaner .submit input[type=submit] {
+  width: 180px;
+  height: 40px;
+  background-color: #141A99;
+  border: solid #1685D6 2px;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+.authorization .authorization_contaner .main-area form .main-area_contaner .submit input[type=submit]:hover, .authorization .sign_up_contaner .main-area form .main-area_contaner .submit input[type=submit]:hover, .sign_up .authorization_contaner .main-area form .main-area_contaner .submit input[type=submit]:hover, .sign_up .sign_up_contaner .main-area form .main-area_contaner .submit input[type=submit]:hover {
+  background-color: #1A20AC;
+}
+.authorization .authorization_contaner .main-area form .main-area_contaner input[type=radio], .authorization .sign_up_contaner .main-area form .main-area_contaner input[type=radio], .sign_up .authorization_contaner .main-area form .main-area_contaner input[type=radio], .sign_up .sign_up_contaner .main-area form .main-area_contaner input[type=radio] {
+  width: 100%;
+  height: 100%;
+}
+
+.grid_header {
+  margin-left: 0%;
+  margin-right: 10%;
+  display: grid;
+  height: 100%;
+  grid-template-areas: "logo navigation user_bar" "logo search_bar .";
+  grid-template-columns: 40% 45% 15%;
+  grid-auto-rows: 50%;
+}
+
+.main_container {
+  display: grid;
+  grid-template-rows: 30% 5% 30% 5% 30%;
+  height: 2000px;
+}
+
+.welcome_board_contaner {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top: -85%;
+  left: 10%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.audio_contaner, .video_contaner {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top: -90%;
+  left: 10%;
+  display: grid;
+  grid-template-areas: "header header header" "elem1 elem2 elem3";
+  grid-template-rows: 20% 80%;
+  gap: 10px;
+}
+
+.footer_contaner {
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2.5%;
+  margin-bottom: 1%;
+  grid-template-columns: 33% 33% 33%;
+  gap: 5%;
+}
+
+.contacts {
+  display: grid;
+  grid-template-areas: "header header" "telephone telephone_data" "mail mail_data";
+  gap: 5%;
+}
+
+.authorization_contaner, .sign_up_contaner {
+  display: grid;
+  grid-template-areas: "logo user_status" "main-area main-area";
+  grid-template-rows: 10% 90%;
+  height: 90vh;
+}
+
+.authorization_contaner .main-area_contaner {
+  display: grid;
+  grid-template-areas: "header" "mail" "password" "forgot_password" "submit";
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 20% 18.3% 18.3% 18.3% 25%;
+}
+
+.sign_up_contaner .main-area_contaner {
+  display: grid;
+  grid-template-areas: "header" "name" "sex" "mail" "password" "submit";
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 20% 15% 15% 15% 15% 20%;
+}
+
+.logo_flex {
+  display: flex;
+  justify-content: center;
+  gap: 2.5%;
+  align-items: center;
+  margin: 0px;
+}
+
+.navigation_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation_element_flex {
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  text-align: center;
+}
+
+.user_bar_flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user_bar_content {
+  display: flex;
+  flex-direction: row;
+  gap: 50%;
+}
+
+.search_bar_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.name_of_site {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.authorization_contaner .user_status, .sign_up_contaner .user_status {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5%;
+  justify-content: center;
+  text-align: center;
+}
+.authorization_contaner .main-area_contaner div, .sign_up_contaner .main-area_contaner div {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.authorization_contaner .main-area_contaner .forgot_password, .sign_up_contaner .main-area_contaner .forgot_password {
+  flex-direction: row;
+  gap: 5%;
+}
+.authorization_contaner .main-area_contaner .sex, .sign_up_contaner .main-area_contaner .sex {
+  display: flex;
+  flex-direction: column;
+}
+.authorization_contaner .main-area_contaner .sex .types, .sign_up_contaner .main-area_contaner .sex .types {
+  display: flex;
+  flex-direction: row;
+  margin: 0 !important;
+}
+.authorization_contaner .main-area_contaner .sex .types div, .sign_up_contaner .main-area_contaner .sex .types div {
+  margin: 0 !important;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: left;
+}

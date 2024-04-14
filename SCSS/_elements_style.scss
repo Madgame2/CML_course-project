@@ -1,0 +1,276 @@
+@import '_mixins.scss';
+
+
+body{
+    background-color: $bg;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none
+}
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $text_collor;
+}
+header{
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+
+    .navigation_menu{
+        @include header;
+    }
+
+    a .navigation_element {
+        @include navigation_elem;
+    }
+    .selected {
+        background-color: $selected_navigation;
+    }
+    a:hover .navigation_element {
+        @include navigation_elem;
+        color: $hover_navigatioon;
+    }
+    .navigation_flex{
+    a:active {
+        background-color: #3D3D3D;
+        transition: all 0.0.5s ease;
+    }
+}
+
+
+    .user_element{
+        @include user_element;
+    }
+
+    .user_bar_content a:hover{
+        color:$hover_navigatioon;
+        .backet{ 
+            svg path {
+            stroke: $hover_navigatioon;
+            }
+        }
+    }
+
+    .search_bar{
+        width: 100%;
+        //height: 100%;
+        margin: auto;
+        form{
+            display: flex;
+            input[type="search"]{
+                @include input_bar;
+            }
+        input[type="search"]:focus{  
+            outline: none;
+            //color: $text_collor;
+            }
+        button{
+            transition: 0.1s;
+            @include search_button;
+            *{
+                margin: auto
+            }
+        }
+        button:hover{
+            transition: 0.1s;
+            background-color: $search_button_bg_hover;
+        }
+    }
+}
+}
+.main_container{
+    padding-top: 130px;
+    .background{
+        @include bg_img;
+    }
+}
+
+.welcome_board_contaner{
+    color: $text_collor;
+    .name_of_site{
+        font-size: 96px;
+        font-weight: bold;
+    }
+    .tagline{
+        span{
+            font-size: 24px;  
+        }
+        font-size: 64px;
+        
+    }
+}
+.audio_contaner{
+    color:$text_collor;
+    .header{
+        font-size: 48px;
+        margin-left: 40%;
+    }
+    .audio_js *{
+        transition: transform 0.3s ease;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 80%;
+            z-index: 2;
+        }
+        span{
+            position: relative;
+            margin-top: -25%;
+            font-size: 32px;
+        }
+    }
+}
+
+.video_contaner{
+    color:$text_collor;
+    .header{
+        font-size: 48px;
+        margin-left: -40%;
+    }
+    .video_js *{
+        transition: transform 0.3s ease;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 80%;
+        }
+        span{
+            position: relative;
+            margin-top: -25%;
+            font-size: 32px;
+        }
+    }
+}
+
+.footer_contaner{
+    color: $text_collor;
+    //box-shadow: 0px -4px 69px 2px #1B103A;
+    .about_us{
+        span{
+            font-size: 24px;
+        }
+    }
+    .support{
+        margin: auto;
+        span{
+            font-size: 24px;
+        }
+        a{
+            display: block;
+        }
+    }
+    .contacts{
+        .header{
+            font-weight: bold;
+        }
+        .params{
+            text-align: right;
+        }
+    }
+}
+
+.authorization, .sign_up{
+    background-color: $authorization_bg;
+    .authorization_contaner, .sign_up_contaner{
+        margin-left: 2.5%;
+        margin-top: 1%;
+        .logo_contaner{
+            margin-top: auto;
+            margin-bottom: auto;
+            .logo_flex{
+                justify-content: left;
+            }
+        }
+        .user_status{
+            font-size: 18px;
+            justify-content: right;
+            margin-right: 20%;
+            div{
+                margin-top: auto;
+                margin-bottom: auto;
+                color: $authorization_user-status_text_color;
+            }
+            a{
+                margin-top: auto;
+                margin-bottom: auto;
+                color: $authorization_user_link_color;
+            }
+            a:hover{
+                color: $authorization_user-link-hover_color;
+            }
+        }
+        .main-area{
+            justify-content: center;
+            @include autorizaton_form;
+            form{
+                width: 100%;
+                color: $text_collor;
+                .header{
+                    color: $text_collor;
+                    margin: auto;
+                    font-weight: bold;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .main-area_contaner{
+                    div{
+                     margin-left: 12.5%;
+                        margin-right: 13%;
+                    }
+
+                    input:not([type="submit"]){
+                        background-color: $authorization_fomr_bg;
+                        border: solid $text_collor 1px;
+                        height: 40%;
+                        border-radius: 10px;
+
+                        color: $text_collor;
+                        padding-left: 2.5%;
+                        font-size: 20px;
+                    }
+                    .submit{
+                        margin-left:auto;
+                        margin-right: auto;
+                        input[type = "submit"]{
+                            width: 180px;
+                            height: 40px;
+
+                            background-color: $submit_button_bg;
+                            border: solid $submit_button_border_color 2px;
+                            color: $text_collor;
+                            border-radius: 10px;
+                        }
+                        input[type = "submit"]:hover{
+                            background-color:$sybmit_button_bg_hover;
+                        }
+                    }
+                    input[type='radio']{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

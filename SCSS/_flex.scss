@@ -1,0 +1,91 @@
+.logo_flex{
+    display: flex;
+    justify-content:center;
+    gap: 2.5%;
+    align-items: center;
+    margin: 0px;
+}
+
+.navigation_flex{
+    display: flex;
+    flex-direction: row;
+}
+.navigation_element_flex{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+}
+
+.user_bar_flex{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user_bar_content{
+    display: flex;
+    flex-direction: row;
+    gap:50%;
+}
+
+.search_bar_flex{
+    display: flex;
+    flex-direction: row;  
+}
+
+.name_of_site{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.tagline{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+
+}
+
+.authorization_contaner, .sign_up_contaner{
+    
+    .user_status{
+
+        display: flex;
+        flex-direction: row;
+        gap: 2.5%;
+        justify-content: center;
+        text-align: center;
+    }
+    .main-area_contaner{
+    div{
+        display: flex;
+        flex-direction: column;
+        gap:10%;
+    }
+    .forgot_password{
+        flex-direction: row;
+        gap:5%;
+    }
+    .sex{
+        display: flex;
+        flex-direction: column;
+        .types {
+            display: flex;
+            flex-direction: row;
+            margin: 0 !important;
+            div{
+                margin: 0 !important;
+                display: flex;
+                flex-direction: row !important;
+                justify-content: left;
+                }
+            }
+        }
+    }
+}
