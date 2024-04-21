@@ -1,10 +1,23 @@
 @import '_mixins.scss';
 
 
-body{
+body, html{
     background-color: $bg;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
-
+body{
+    display: flex;
+    max-width: 100%;
+}
+footer{
+    position: relative;
+    bottom: 0;
+}
+main{
+    padding-top: 130px;
+    min-height: 68vh;
+}
 *{
     margin: 0;
     padding: 0;
@@ -40,7 +53,7 @@ header{
     .navigation_flex{
     a:active {
         background-color: #3D3D3D;
-        transition: all 0.0.5s ease;
+        transition: all 0.5s ease;
     }
 }
 
@@ -271,6 +284,132 @@ header{
                     }
                 }
             }
+        }
+    }
+}
+
+.intermediate_conataner{
+    
+    width:  clamp(1180px,100%,1392px);
+    color: $text_collor;
+    .categories{
+        span{
+            font-size: 32px;
+            font-weight: bold;
+        }
+        hr{
+            //border-color: $border_color;
+            border: 5px dashed $border_color;
+        }
+        ul{
+            list-style: none;
+            li{
+                a{
+                    font-size: 24px;
+                    color: $text_collor;
+                }
+
+            }
+            li:hover{
+                background: $categoris_hover;
+            }
+        }
+    }
+    .examples{
+        .header{
+            font-weight: bold;
+            font-size: 32px;
+            justify-content: left !important;
+        }
+        .interative_zone_contaner{
+            
+            .interative_zone{
+                justify-content: center;
+                .gui_bar{
+                    span{
+                        margin-top: auto !important;
+                        margin-bottom: auto !important;
+                        margin:0 4px ;
+                        display: block;
+                        width: 45px;
+                        height: 3px;
+
+                        cursor: pointer;
+                    }
+                    .active{
+                        background: $gui_bar_segment_active;
+                    }
+                    .disactive{
+                        background: $gui_bar_segment_disactive;
+                    }
+                }
+                .button{
+                    cursor: pointer;
+                }
+                .button:hover{
+                    svg{
+                        path{
+                            stroke: $hover_navigatioon;
+                        }
+                    }
+                }
+            }
+        }
+        .goods_contaner{
+            width: clamp(560px,100%, 1100px);
+           .visible_area{
+            height: 100%;
+            width: 100%;
+            padding: 22px 0px;
+            //margin-left: -15px;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            outline: 0 !important;
+            .moviable_block{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition-property: transform;
+                box-sizing: content-box;
+
+                transition: all 0.5s ease;
+                }
+                .goods{
+                    flex-shrink: 0;
+                    width: 25%;
+
+                    .contaner{
+                        width: 100%;
+                        a{
+                          margin: auto;
+                            img{
+                                border-radius: 20px;
+                            }
+                        }
+                        .name_area{
+                            margin-bottom: 15%;
+                            padding: 0px 15% ;
+                            font-size: 20px;
+                        }
+                        .coast_contaner{
+                            padding: 0px 15% ;
+                            font-weight: bold;
+                            .rubels{
+                                font-size: 32px;
+                            }
+                        }
+                        .button{
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                width: 80%;
+                                height: 80%;
+                            }
+                        }
+                    }
+                }
+           }
         }
     }
 }

@@ -1,5 +1,22 @@
-body {
+body, html {
   background-color: rgb(11, 11, 11);
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  max-width: 100%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+main {
+  padding-top: 130px;
+  min-height: 68vh;
 }
 
 * {
@@ -45,7 +62,7 @@ header a:hover .navigation_element {
 }
 header .navigation_flex a:active {
   background-color: #3D3D3D;
-  transition: all 0 0.5s ease;
+  transition: all 0.5s ease;
 }
 header .user_element {
   text-align: center;
@@ -287,6 +304,110 @@ header .search_bar form button:hover {
   height: 100%;
 }
 
+.intermediate_conataner {
+  width: clamp(1180px, 100%, 1392px);
+  color: #FFFFFF;
+}
+.intermediate_conataner .categories span {
+  font-size: 32px;
+  font-weight: bold;
+}
+.intermediate_conataner .categories hr {
+  border: 5px dashed #141A99;
+}
+.intermediate_conataner .categories ul {
+  list-style: none;
+}
+.intermediate_conataner .categories ul li a {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.intermediate_conataner .categories ul li:hover {
+  background: #181818;
+}
+.intermediate_conataner .examples .header {
+  font-weight: bold;
+  font-size: 32px;
+  justify-content: left !important;
+}
+.intermediate_conataner .examples .interative_zone_contaner .interative_zone {
+  justify-content: center;
+}
+.intermediate_conataner .examples .interative_zone_contaner .interative_zone .gui_bar span {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  margin: 0 4px;
+  display: block;
+  width: 45px;
+  height: 3px;
+  cursor: pointer;
+}
+.intermediate_conataner .examples .interative_zone_contaner .interative_zone .gui_bar .active {
+  background: #1A58CE;
+}
+.intermediate_conataner .examples .interative_zone_contaner .interative_zone .gui_bar .disactive {
+  background: #5F5F5F;
+}
+.intermediate_conataner .examples .interative_zone_contaner .interative_zone .button {
+  cursor: pointer;
+}
+.intermediate_conataner .examples .interative_zone_contaner .interative_zone .button:hover svg path {
+  stroke: #1A58CE;
+}
+.intermediate_conataner .examples .goods_contaner {
+  width: clamp(560px, 100%, 1100px);
+}
+.intermediate_conataner .examples .goods_contaner .visible_area {
+  height: 100%;
+  width: 100%;
+  padding: 22px 0px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  outline: 0 !important;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .moviable_block {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition-property: transform;
+  box-sizing: content-box;
+  transition: all 0.5s ease;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods {
+  flex-shrink: 0;
+  width: 25%;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner {
+  width: 100%;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner a {
+  margin: auto;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner a img {
+  border-radius: 20px;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .name_area {
+  margin-bottom: 15%;
+  padding: 0px 15%;
+  font-size: 20px;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .coast_contaner {
+  padding: 0px 15%;
+  font-weight: bold;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .coast_contaner .rubels {
+  font-size: 32px;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .button {
+  justify-content: center;
+  align-items: center;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .button svg {
+  width: 80%;
+  height: 80%;
+}
+
 .grid_header {
   margin-left: 0%;
   margin-right: 10%;
@@ -362,6 +483,14 @@ header .search_bar form button:hover {
   width: 100%;
   height: 100%;
   grid-template-rows: 20% 15% 15% 15% 15% 20%;
+}
+
+.intermediate_conataner {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  grid-row: 1;
+  margin-top: 1%;
+  margin-left: 5%;
 }
 
 .logo_flex {
@@ -448,4 +577,73 @@ header .search_bar form button:hover {
   display: flex;
   flex-direction: row !important;
   justify-content: left;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.intermediate_conataner {
+  flex-grow: 1;
+}
+.intermediate_conataner .categories, .intermediate_conataner .examples {
+  display: flex;
+  flex-direction: column;
+}
+.intermediate_conataner .categories ul {
+  display: flex;
+  flex-direction: column;
+}
+.intermediate_conataner .categories ul li {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  padding: 2%;
+}
+.intermediate_conataner .interative_zone {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+.intermediate_conataner .interative_zone .button {
+  display: flex;
+}
+.intermediate_conataner .interative_zone .gui_bar {
+  display: flex;
+  flex-direction: row;
+}
+.intermediate_conataner .examples_contaner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.intermediate_conataner .examples_contaner .header {
+  height: 10%;
+}
+.intermediate_conataner .examples_contaner .goods_contaner {
+  height: 75%;
+}
+.intermediate_conataner .examples_contaner .goods_contaner .visible_area .moviable_block {
+  display: flex;
+}
+.intermediate_conataner .examples_contaner .interative_zone_contaner {
+  height: 15%;
+}
+.intermediate_conataner .examples_contaner .contaner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.intermediate_conataner .examples_contaner .contaner a {
+  height: 50%;
+}
+.intermediate_conataner .examples_contaner .contaner .name_area {
+  height: 25%;
+}
+.intermediate_conataner .examples_contaner .contaner .coat_contaner {
+  height: 15%;
+}
+.intermediate_conataner .examples_contaner .contaner .button {
+  height: 15%;
+  display: flex;
 }

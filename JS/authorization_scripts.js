@@ -1,4 +1,4 @@
 function forgot_pasword(){
     vall  = prompt("Введите ваш email:");
-    alert("Мы отправили данные для востановления на почту: "+vall );
+    if(vall!=null&& vall!="") alert("Мы отправили данные для востановления на почту: "+vall );
 }

@@ -89,3 +89,87 @@
         }
     }
 }
+
+
+main{
+    display: flex;
+    width: 100%;
+    
+}
+
+.intermediate_conataner{
+
+    flex-grow: 1;
+    .categories,  .examples{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .categories{
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                margin-top: 1.5%;
+                margin-bottom: 1.5%;
+                padding: 2%;
+                
+            }
+        }
+    }
+
+    .interative_zone{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        .button{
+            display: flex;
+        }
+        .gui_bar{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .examples_contaner{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .header{
+            height: 10%;
+        }
+
+        .goods_contaner{
+            height: 75%;
+            .visible_area{
+                .moviable_block{
+                    display: flex;
+                }
+            }    
+        }
+
+        .interative_zone_contaner{
+            height: 15%;
+        }
+
+        .contaner{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            a{
+                height: 50%;
+            }
+            .name_area{
+                height: 25%;
+            }
+            .coat_contaner{
+                height: 15%;
+            }
+            .button{
+                height: 15%;
+                display: flex;
+            }
+        }
+    }
+
+}

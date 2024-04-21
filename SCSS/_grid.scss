@@ -98,3 +98,13 @@
     grid-template-rows: 20% 15% 15% 15% 15% 20%;
 }
 }
+
+.intermediate_conataner{
+    display: grid; 
+    grid-template-columns: 25% 70%;
+    grid-row: 1;
+    margin-top: 1%;
+    margin-left: 5%;
+    //grid-gap: 5%;
+    
+}
