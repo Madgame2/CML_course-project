@@ -10,7 +10,7 @@ window.addEventListener("resize",function(){
 function resize_goods(){
     var visiabel_area = document.getElementsByClassName("visible_area")[0].getBoundingClientRect();
 
-    var element_width=visiabel_area.width / 4;
+    var element_width=visiabel_area.width / 4.7;
 
     var elemetns =document.getElementsByClassName("goods");
 
@@ -81,4 +81,17 @@ function move_goods_bar(){
     elements.forEach(function(element) {
         element.style.transform = 'translate(' + off_set + '%, 0px)';
     });
+}
+
+function goods_hover(element){
+
+    console.log(element.parentNode);
+    //var test = element.parentNode;
+    element.style.boxShadow = "0px 0px 15px 0px #141A99";
+}
+
+function goods_back_to_normal(element){
+
+    console.log(element.parentNode);
+    element.style.boxShadow = "";
 }

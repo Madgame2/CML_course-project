@@ -377,13 +377,21 @@ header{
                 }
                 .goods{
                     flex-shrink: 0;
-                    width: 25%;
+                    width: 21.27%;
+                    margin: -10px 20px;
+
+
 
                     .contaner{
                         width: 100%;
+                        border-radius: 20px;
+
+                        transition: box-shadow 0.2s ease;
+
                         a{
                           margin: auto;
                             img{
+                                margin-top: 5px;
                                 border-radius: 20px;
                             }
                         }
@@ -405,6 +413,13 @@ header{
                             svg{
                                 width: 80%;
                                 height: 80%;
+                                cursor: pointer;
+                            }
+
+                            svg:hover{
+                                rect{
+                                    fill: #FC0000;
+                                }
                             }
                         }
                     }

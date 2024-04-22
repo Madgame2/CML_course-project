@@ -376,15 +376,19 @@ header .search_bar form button:hover {
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods {
   flex-shrink: 0;
-  width: 25%;
+  width: 21.27%;
+  margin: -10px 20px;
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner {
   width: 100%;
+  border-radius: 20px;
+  transition: box-shadow 0.2s ease;
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner a {
   margin: auto;
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner a img {
+  margin-top: 5px;
   border-radius: 20px;
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .name_area {
@@ -406,6 +410,10 @@ header .search_bar form button:hover {
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .button svg {
   width: 80%;
   height: 80%;
+  cursor: pointer;
+}
+.intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .button svg:hover rect {
+  fill: #FC0000;
 }
 
 .grid_header {
