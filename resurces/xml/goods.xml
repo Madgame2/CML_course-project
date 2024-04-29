@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <category type="audio">
+         <sub_category type="microphones_and_headphones" name="Микрофоны и наушники">
+            <filters>
+                <filter type="scroll" var="coast" name="Цена"></filter>
+                <filter type="simple" var="brend" name="Бренды">
+                    <point id="1">JBL</point>
+                    <point id="2">Logitech </point>
+                    <point id="3">Marshall</point>
+                    <point id="4">CANYON</point>
+                    <point id="5">SONY</point>
+                    <point id="6">SVEN</point>
+                    <point id="7">HyperX</point>
+                    <point id="8">HONOR</point>
+                    <point id="8">FIFINE</point>
+                    <point id="8">BOYA</point>
+                    <point id="9">Havit</point>
+                    <point id="10">REDRAGON</point>
+                    <point id="11">Infinix</point>
+                    <point id="12">Apple</point>
+                </filter>
+                <filter type="simple" var="connecton_type" name="Тип подключения">
+                    <point id="1">Беспроводное (True wireless)</point>
+                    <point id="2">Проводное</point>
+                    <point id="3">Беспроводное (съемный аудиокабель)</point>
+                    <point id="4">Беспроводное</point>
+                </filter>
+            </filters>
+            <item>
+                <id>1</id>
+                <name>Наушники Marshall Major IV</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>489</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\major-iv-bluetooth-naushniki-nakladnye-marshall-1_200.jpg</main_img>
+                <extra>
+                    <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                    <element type="connecton_type" name="Тип подключения:">Беспроводное (съемный аудиокабель)</element>
+                    <element type="connector_type" name="Тип разьемов:">3.5 мм джек, USB Type-C (для зарядки)</element>
+                    <element type="brend" name="Бренд:">Marshall</element>
+                </extra>
+            </item>
+        <item>
+            <id>2</id>
+            <status mode="in_stock">В наличии</status>
+            <name>Наушники Xiaomi Redmi Buds 4 Active M2232E1</name>
+            <coast>
+                <rubles>79</rubles>
+                <kopecks>00</kopecks>
+            </coast>
+            <main_img>resurces\img\-1_200.jpg</main_img>
+            <extra>
+                    <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                    <element type="connecton_type" name="Тип подключения:">Беспроводное (True wireless)</element>
+                    <element type="connector_type" name="Тип разьемов:">USB Type-C (для зарядки)</element>
+                    <element type="brend" name="Бренд:">Xiaomi</element>
+            </extra>
+        </item>
+    <item>
+        <id>3</id>
+        <status mode="from_the_showcase">Товар с витрины</status>
+        <name>Микрофон SVEN MK-715</name>
+        <coast>
+            <rubles>137</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\mk-715-chernyy-mikrofon-sven-1_200.jpg</main_img>
+            <extra>
+                    <element type="device_type" name="Тип устройства:">Микрофон</element>
+                    <element type="connecton_type" name="Тип подключения:">Беспроводное</element>
+                    <element type="wireless interface" name="Беспроводной интерфейс:">Радио</element>
+                    <element type="connector_type" name="Тип разьемов:">USB Type-C (для зарядки)</element>
+                    <element type="brend" name="Бренд:">SVEN</element>
+            </extra>
+    </item>
+    <item>
+        <id>4</id>
+        <status mode="from_the_showcase">Товар с витрины</status>
+        <name>Наушники Logitech G435 (981-001053)</name>
+        <coast>
+            <rubles>269</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\981-001053-g435-igrovye-naushniki-logitech-chernyy-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное</element>
+                <element type="appointment" name="Назначение:">Геймерские</element>
+                <element type="brend" name="Бренд:">Logitech</element>
+        </extra>
+    </item>
+    <item>
+        <id>5</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники HyperX Cloud Core DTS</name>
+        <coast>
+            <rubles>299</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\4p4f2aa-hx-hscc-2-bk-ww-naushniki-hyperx-cloud-core-dts-7-1-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Проводное</element>
+                <element type="appointment" name="Назначение:">Геймерские, Для игровых консолей</element>
+                <element type="brend" name="Бренд:">HyperX</element>
+        </extra>
+    </item>
+    <item>
+        <id>6</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Микрофон SVEN MK-710</name>
+        <coast>
+            <rubles>68</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\mk-710-black-mikrofon-sven-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Микрофон</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное</element>
+                <element type="appointment" name="Назначение:">Для караоке и вокала</element>
+                <element type="wireless interface" name="Беспроводной интерфейс:">Радио</element>
+                <element type="brend" name="Бренд:">SVEN</element>
+        </extra>
+    </item>
+    <item>
+        <id>7</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники SONY WH-CH520B</name>
+        <coast>
+            <rubles>199</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\-1_200 SONY.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное</element>
+                <element type="connector_type" name="Тип разьемов:">USB Type-C (для зарядки)</element>
+                <element type="brend" name="Бренд:">SONY</element>
+                <element type="appointment" name="Назначение:"></element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    <item>
+        <id>8</id>
+        <status mode="from_the_showcase">Товар с витрины</status>
+        <name>Наушники Logitech G435 (981-001077)</name>
+        <coast>
+            <rubles>269</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\981-001077-g435-igrovye-naushniki-logitech-belyy-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное</element>
+                <element type="appointment" name="Назначение:">Геймерские</element>
+                <element type="brend" name="Бренд:">Logitech</element>
+        </extra>
+    </item>
+    <item>
+        <id>9</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники HONOR Choice Earbuds X5</name>
+        <coast>
+            <rubles>99</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\lctws005-besprovodnye-naushniki-honor-choice-earbuds-x5-white-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное (True wireless)</element>
+                <element type="connector_type" name="Тип разьемов:">USB Type-C (для зарядки)</element>
+                <element type="brend" name="Бренд:">HONOR</element>
+                <element type="appointment" name="Назначение:"></element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+        <item>
+        <id>10</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники FIFINE H6</name>
+        <coast>
+            <rubles>129</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\h6-black-naushniki-s-mikrofonom-fifine-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Проводное</element>
+                <element type="appointment" name="Назначение:"> Геймерские, Для игровых консолей</element>
+                <element type="brend" name="Бренд:">FIFINE</element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    <item>
+        <id>11</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Микрофон-петля BOYA BY-M1</name>
+        <coast>
+            <rubles>44</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\good_img_adcd05ea-a3a7-11e9-80c7-005056840c70_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Микрофон</element>
+                <element type="connecton_type" name="Тип подключения:">Проводное</element>
+                <element type="appointment" name="Назначение:"> Для интервью, Для общения</element>
+                <element type="brend" name="Бренд:">BOYA</element>
+        </extra>
+    </item>
+        <item>
+        <id>12</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники Marshall Major IV </name>
+        <coast>
+            <rubles>459</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\major-iv-bluetooth-korichnevye-naushniki-marshall-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное (съемный аудиокабель)</element>
+                <element type="connector_type" name="Тип разьемов:">3.5 мм джек, USB Type-C (для зарядки)</element>
+                <element type="brend" name="Бренд:">Marshall</element>
+                <element type="appointment" name="Назначение:"></element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    <item>
+        <id>13</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники Havit Gamenote H2232d </name>
+        <coast>
+            <rubles>42</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\-1_200 HAVIT.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Проводное</element>
+                <element type="appointment" name="Назначение:">Геймерские</element>
+                <element type="brend" name="Бренд:">Havit</element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    <item>
+        <id>14</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Игровая гарнитура REDRAGON Cadmus (70712) </name>
+        <coast>
+            <rubles>129</rubles>
+            <kopecks>90</kopecks>
+        </coast>
+        <main_img>resurces\img\70712-igrovaya-garnitura-cadmus-rgb-1_200.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Проводное</element>
+                <element type="appointment" name="Назначение:">Геймерские</element>
+                <element type="brend" name="Бренд:">REDRAGON</element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    <item>
+        <id>15</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Беспроводные наушники Infinix Buds Neo (XE26) </name>
+        <coast>
+            <rubles>79</rubles>
+            <kopecks>90</kopecks>
+        </coast>
+        <main_img>resurces\img\-1_200 NEO.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное (True wireless)</element>
+                <element type="connector_type" name="Тип разьемов:">USB Type-C (для зарядки)</element>
+                <element type="brend" name="Бренд:">Infinix</element>
+                <element type="appointment" name="Назначение:"></element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    <item>
+        <id>16</id>
+        <status mode="in_stock">В наличии</status>
+        <name>Наушники Apple Airpods 2 Wired (MV7N2/A)</name>
+        <coast>
+            <rubles>529</rubles>
+            <kopecks>00</kopecks>
+        </coast>
+        <main_img>resurces\img\-1_200 APPLE.jpg</main_img>
+        <extra>
+                <element type="device_type" name="Тип устройства:">Наушники с микрофоном</element>
+                <element type="connecton_type" name="Тип подключения:">Беспроводное (True wireless)</element>
+                <element type="connector_type" name="Тип разьемов:">Lightning (для зарядки)</element>
+                <element type="brend" name="Бренд:">Apple</element>
+                <element type="appointment" name="Назначение:"></element>
+                <element type="wireless interface" name="Беспроводной интерфейс:"></element>
+        </extra>
+    </item>
+    </sub_category>
+    </category>
+
+    <category type="video">
+        <sub_category type="video_cameras">
+            <item>
+                <id>1</id>
+                <name>IP-видеокамера Xiaomi Smart Camera C300 XMC01 (BHR6540GL)</name>
+                <coast>
+                    <rubles>189</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\bhr6540gl-smart-camera-c300-xmc01-ip-videokamera-xiaomi-1_200.jpg</main_img>
+            </item>
+            <item>
+                <id>2</id>
+                <name>Видеокамера Sony HDR-CX405B</name>
+                <coast>
+                    <rubles>1401</rubles>
+                    <kopecks>84</kopecks>
+                </coast>
+                <main_img>resurces\img\videokamera_sony_hdr-cx450 (1).png</main_img>
+            </item>
+        </sub_category>
+    </category>
+</product>

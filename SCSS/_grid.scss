@@ -108,3 +108,25 @@
     //grid-gap: 5%;
     
 }
+
+.catalog{
+    main{
+        .contaner{
+            .goods_area{
+                .contaner{
+                    .goods{
+                        display: grid;
+                        grid-template-areas: 
+                        "img name       name"
+                        "img status     buy"
+                        "img extro_info buy";
+                        grid-template-rows: 25% 25% 50%;
+                        grid-template-columns: 25% 40% 35%;
+
+                        width: 96%;
+                    }
+                }
+            }
+        }
+    }
+}

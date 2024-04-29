@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>audio categories</title>
+    <title>video categories</title>
+    <link rel="stylesheet" href="css/Style.css">
     <script> 
         var xhttp = new XMLHttpRequest();
         var xml_doc;
@@ -19,16 +20,14 @@
             var parser= new DOMParser();
     
             xml_doc=parser.parseFromString(xml_text,"text/xml")
+    
             
             console.log(xml_doc);
-
-            build_audio_examples_bar(xml_doc)
         }
-        
+
+        build_video_examples_bar(xml_doc)
     }</script>
 </head>
-
-<link rel="stylesheet" href="css/Style.css">
 <body onload="">
     <header>
         <div class="navigation_menu">
@@ -45,8 +44,8 @@
                 </div>
                 <div style="grid-area: navigation;" class="navigation_flex">
                     <a href="main_page.html" class="navigation_element_flex"><div class="navigation_element ">Главная</div></a>
-                    <a href="audio_intemediate_page.html" class="navigation_element_flex selected"><div class="navigation_element">Аудио</br> техника</div></a>
-                    <a href="video_intemediate_page.html"  class="navigation_element_flex"><div class="navigation_element">Видео</br> техника</div></a>
+                    <a href="audio_intemediate_page.html" class="navigation_element_flex"><div class="navigation_element">Аудио</br> техника</div></a>
+                    <a href="video_intemediate_page.html"  class="navigation_element_flex selected"><div class="navigation_element">Видео</br> техника</div></a>
                 </div>
                 <div style="grid-area: search_bar;" class="search_bar_flex">
                     <div class="search_bar">
@@ -96,9 +95,9 @@
                     </svg>
                     
                 <ul>
-                    <li><a href="">Звукоуселители</a></li>
-                    <li><a href="catalog.html?type=microphones_and_headphones">Аккустические системы</a></li>
-                    <li><a href="catalog.html?type=microphones_and_headphones">микрофоны и наушники</a></li>
+                    <li><a href="">Видеокамеры</a></li>
+                    <li><a href="">Фотоаппараты</a></li>
+                    <li><a href="">Мониторы</a></li>
                 </ul>
             </div>
             <div class="examples">

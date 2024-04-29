@@ -84,14 +84,12 @@ function move_goods_bar(){
 }
 
 function goods_hover(element){
-
-    console.log(element.parentNode);
     //var test = element.parentNode;
     element.style.boxShadow = "0px 0px 15px 0px #141A99";
 }
 
 function goods_back_to_normal(element){
-
-    console.log(element.parentNode);
     element.style.boxShadow = "";
 }
+
+

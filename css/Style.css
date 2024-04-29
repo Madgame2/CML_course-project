@@ -12,11 +12,13 @@ body {
 footer {
   position: relative;
   bottom: 0;
+  flex-shrink: 0;
 }
 
 main {
   padding-top: 130px;
   min-height: 68vh;
+  flex-grow: 1;
 }
 
 * {
@@ -33,6 +35,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 header {
@@ -416,6 +419,185 @@ header .search_bar form button:hover {
   fill: #FC0000;
 }
 
+.catalog {
+  color: #FFFFFF;
+}
+.catalog main .contaner .params_area {
+  background-color: #000000;
+}
+.catalog main .contaner .params_area .main_area {
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 95%;
+}
+.catalog main .contaner .params_area .main_area .type_of_catalog {
+  font-size: 32px;
+  font-weight: bold;
+}
+.catalog main .contaner .params_area .main_area .filters {
+  font-size: 28px;
+}
+.catalog main .contaner .params_area .main_area .filters_area {
+  height: 100%;
+  margin: 0 5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area {
+  width: 100%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .head {
+  font-size: 24px;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .input_area .block input {
+  height: 42px;
+  width: 95%;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  color: #797979;
+  font-size: 24px;
+  padding-left: 5%;
+  background-color: #000000;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .scroll .inp_range {
+  margin: 8px 12px;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .scroll .inp_range .bg {
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .scroll .inp_range .bg .user_input {
+  background-color: #1A58CE;
+  height: 100%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .scroll .bubles {
+  position: relative;
+  top: -24px;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .scroll .bubles div {
+  touch-action: none;
+  border-radius: 50%;
+  position: relative;
+  background-color: #000000;
+  border: 8px solid;
+  border-color: #1A58CE;
+  width: 10px;
+  height: 10px;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .scroll .bubles .max {
+  position: relative;
+  top: -26px;
+  right: -92.5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter {
+  width: 100%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .head {
+  font-size: 24px;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner {
+  margin-left: 5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner .brend {
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner .brend input {
+  width: 0;
+  height: 0;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner .brend .border {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  border: 2px solid #FFFFFF;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner .brend .border .contant {
+  display: none;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner input:checked ~ .border {
+  background-color: #1A58CE;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner input:checked ~ .border .contant {
+  display: block;
+}
+.catalog main .goods_area {
+  background-color: #1F1F1F;
+}
+.catalog main .goods_area .contaner hr {
+  margin-left: 5%;
+  width: 90%;
+  border-color: rgba(20, 26, 153, 0.6);
+}
+.catalog main .goods_area .contaner .goods {
+  border-radius: 20px;
+  margin: 2%;
+  transition: all 0.2s linear;
+}
+.catalog main .goods_area .contaner .goods .img {
+  margin-left: 5%;
+  text-align: center;
+}
+.catalog main .goods_area .contaner .goods .img img {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+.catalog main .goods_area .contaner .goods .name {
+  text-align: left;
+}
+.catalog main .goods_area .contaner .goods .name .name_cont {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+}
+.catalog main .goods_area .contaner .goods .name .name_cont:hover {
+  color: #1A58CE;
+}
+.catalog main .goods_area .contaner .goods .status {
+  font-size: 24px;
+}
+.catalog main .goods_area .contaner .goods .status .curcle {
+  background-color: limegreen;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.catalog main .goods_area .contaner .goods .extra .extra_param {
+  font-size: 20px;
+}
+.catalog main .goods_area .contaner .goods .extra .extra_param .status {
+  font-size: 18px;
+  font-weight: bold;
+}
+.catalog main .goods_area .contaner .goods .buy .buy_contaner {
+  margin-right: 15%;
+}
+.catalog main .goods_area .contaner .goods .buy .buy_contaner svg {
+  cursor: pointer;
+  width: 100%;
+}
+.catalog main .goods_area .contaner .goods .buy .buy_contaner svg:hover rect {
+  fill: #FC0000;
+}
+.catalog main .goods_area .contaner .goods .buy .buy_contaner .button {
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.catalog main .goods_area .contaner .goods .coast {
+  font-size: 24px;
+  font-weight: bold;
+}
+.catalog main .goods_area .contaner .goods .coast .rubels {
+  font-size: 40px;
+}
+.catalog main .goods_area .contaner .goods:hover {
+  box-shadow: 0px 0px 15px 0px #141A99;
+}
+
 .grid_header {
   margin-left: 0%;
   margin-right: 10%;
@@ -499,6 +681,14 @@ header .search_bar form button:hover {
   grid-row: 1;
   margin-top: 1%;
   margin-left: 5%;
+}
+
+.catalog main .contaner .goods_area .contaner .goods {
+  display: grid;
+  grid-template-areas: "img name       name" "img status     buy" "img extro_info buy";
+  grid-template-rows: 25% 25% 50%;
+  grid-template-columns: 25% 40% 35%;
+  width: 96%;
 }
 
 .logo_flex {
@@ -654,4 +844,93 @@ main {
 .intermediate_conataner .examples_contaner .contaner .button {
   height: 15%;
   display: flex;
+}
+
+.catalog main .contaner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.catalog main .contaner .goods_area {
+  flex: 6;
+}
+.catalog main .contaner .goods_area .contaner {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin: 2.5% 0px;
+  width: 100%;
+}
+.catalog main .contaner .goods_area .contaner .goods .status {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5%;
+}
+.catalog main .contaner .goods_area .contaner .goods .extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+}
+.catalog main .contaner .goods_area .contaner .goods .extra .extra_param {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: center;
+}
+.catalog main .contaner .goods_area .contaner .goods .buy .buy_contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5%;
+}
+.catalog main .contaner .goods_area .contaner .goods .coast {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+.catalog main .contaner .params_area {
+  flex: 2;
+}
+.catalog main .contaner .params_area .main_area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area {
+  display: flex;
+  flex-direction: column;
+}
+.catalog main .contaner .params_area .main_area .filters_area .scroll_area .input_area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter {
+  display: flex;
+  flex-direction: column;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.catalog main .contaner .params_area .main_area .filters_area .simple_filter .contaner .brend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }

@@ -171,5 +171,108 @@ main{
             }
         }
     }
+}
 
+.catalog{
+    main{
+        .contaner{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .goods_area{
+                flex:6;
+                .contaner{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5%;
+                    margin: 2.5% 0px;
+                    width: 100%;
+
+                    .goods{
+                        
+                        .status{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 2.5%;
+                            
+                        }
+                        .extra{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap:5%;
+                            .extra_param{
+                                display: flex;
+                                flex-direction: row;
+                                gap: 5%;
+                                align-items: center;
+                            }
+                        }
+                        .buy{
+                            .buy_contaner{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: end;
+                                gap: 5%;
+                            }
+                        }
+                        .coast{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            align-items:baseline;
+                        }
+                    }
+
+                }
+            }
+            .params_area{
+                flex: 2;
+                .main_area{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding-bottom: 5%;
+                    .filters_area{
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 5%;
+
+                        .scroll_area{
+                            display: flex;
+                            flex-direction: column;
+                            .input_area{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                gap: 5%;
+
+                                margin-top: 2.5%;
+                                margin-bottom: 2.5%;
+                            }
+                        }
+                        .simple_filter{
+                            display: flex;
+                            flex-direction: column;
+                            .contaner{
+                                display: flex;
+                                flex-direction: column;
+
+                                margin-top: 5%;
+                                margin-bottom: 5%;
+                                .brend{
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: nowrap;
+                                    gap: 5%;
+                                    margin-top: 1.5%;
+                                    margin-bottom: 1.5%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
