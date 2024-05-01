@@ -27,8 +27,6 @@ function build_page(xml_doc){
     var filters = my_element.getElementsByTagName("filters")[0].getElementsByTagName("filter");
 
     for(var i=0;i<Number(filters.length);i++){
-        
-        console.log(i);
 
         var filter = filters[i];
         
@@ -55,16 +53,6 @@ function build_page(xml_doc){
         }
         document.getElementById("filters").appendChild(new_filte);
     }
-
-    //ar test = xml_doc.getElementsByTagName("item")[0];
-
-    //var test_new_elem = build_goods_element(test);
-
-    //document.getElementsByClassName("goods_area")[0].getElementsByClassName("contaner")[0].appendChild(test_new_elem);
-    
-    //console.log(test_new_elem);
-
-    //console.log(test);
 
     var list_of_goods=my_element.getElementsByTagName("item");
 
@@ -466,7 +454,7 @@ function build_goods_element(xml_element){
     img.className = "img";
 
     var a= document.createElement("a");
-    a.setAttribute("href","#");
+    a.setAttribute("href","product_window.html?type="+type+"&"+"id="+goods.id);
 
     var image= document.createElement("img");
     //img.src=xml_element.getElementsByTagName("main_img")[0].innerHTML;
@@ -483,7 +471,7 @@ function build_goods_element(xml_element){
 
     var name_cont = document.createElement("a");
     name_cont.className="name_cont";
-    name_cont.setAttribute("href","#");
+    name_cont.setAttribute("href","product_window.html?type="+type+"&"+"id="+goods.id);
     name_cont.textContent =xml_element.getElementsByTagName("name")[0].innerHTML;
 
     name.appendChild(name_cont);
@@ -643,12 +631,6 @@ function update_goods_list(){
         list_of_id.push(i+1);
     }
 
-    
-    console.log(list_of_id);
-    console.log(list_of_gooods);
-    console.log(list_of_params);
-    console.log(filters);
-
     for(var i =0;i<filters.length;i++){
         if(filters[i].getAttribute("type")=="scroll"){
             
@@ -656,9 +638,6 @@ function update_goods_list(){
 
             var min = Number(document.getElementsByClassName("filters_area")[0].getElementsByClassName("filter")[i].getElementsByClassName("min")[0].value);
             var max=Number(document.getElementsByClassName("filters_area")[0].getElementsByClassName("filter")[i].getElementsByClassName("max")[0].value);
-        
-            console.log(min);
-            console.log(max);
 
             for(var j=0;j<list_of_gooods.length;j++){
 
@@ -687,14 +666,11 @@ function update_goods_list(){
                         }
                     }
                 }
-
-                console.log(list_of_id);
             }
             
         }
         if(filters[i].getAttribute("type")=="simple"){
             var list_of_lable = document.getElementById(filters[i].getAttribute("var")).getElementsByClassName("brend");
-            //console.log(list_of_lable);
 
             var list_of_checkbox={}
             var count_of_active=0;
@@ -707,8 +683,6 @@ function update_goods_list(){
             if(count_of_active>0){
                 for(var j=0;j<list_of_gooods.length;j++){
                     var elements =  global_xml.getElementsByTagName("item")[j].getElementsByTagName("element");
-                    
-                    //console.log(elements);
 
                     var variatail;
                     for(var z=0;z<elements.length;z++){
@@ -740,7 +714,6 @@ function update_goods_list(){
         }
         if(has_id){
             html_list_of_goods[i].parentElement.style.display="block";
-            //console.log("id"+i);
         }
     }
 

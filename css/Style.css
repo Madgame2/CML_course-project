@@ -393,6 +393,7 @@ header .search_bar form button:hover {
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner a img {
   margin-top: 5px;
   border-radius: 20px;
+  width: 200px;
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .name_area {
   margin-bottom: 15%;
@@ -598,6 +599,154 @@ header .search_bar form button:hover {
   box-shadow: 0px 0px 15px 0px #141A99;
 }
 
+.product_window button {
+  background: 0;
+  border: 0;
+}
+.product_window main {
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+  flex-direction: column;
+}
+.product_window main .name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.product_window main .images {
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+}
+.product_window main .images .main_image {
+  width: 350px;
+}
+.product_window main .images .main_image .image {
+  border-radius: 20px;
+  width: 100%;
+}
+.product_window main .images .intaractive {
+  align-items: center;
+  margin-top: 2%;
+}
+.product_window main .images .intaractive .button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.09s linear;
+}
+.product_window main .images .intaractive .button:hover.clicked {
+  background-color: #3400C6 !important;
+}
+.product_window main .images .intaractive .button:hover {
+  box-shadow: 0px 0px 20px 1px rgba(0, 198, 186, 0.25);
+  cursor: pointer;
+}
+.product_window main .images .intaractive .small_img .elem {
+  margin: 0 5px;
+}
+.product_window main .images .intaractive .small_img .elem .img {
+  margin: 5px;
+  width: 80px;
+}
+.product_window main .images .intaractive .small_img .elem .img img {
+  border-radius: 10px;
+  width: 100%;
+  border: 3px solid #1F1F1F;
+}
+.product_window main .images .intaractive .small_img .elem .img .active {
+  border: 3px solid #1A58CE;
+  transition: border 0.1s linear;
+}
+.product_window main .info {
+  line-height: 30px;
+}
+.product_window main .info .header {
+  margin-top: 2%;
+  font-size: 24px;
+  font-weight: bold;
+}
+.product_window main .info .info_area {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.product_window main .buy {
+  margin-top: 2%;
+}
+.product_window main .buy .line {
+  margin-bottom: 20px;
+}
+.product_window main .buy .line hr {
+  border: 2px dashed;
+  border-color: #141A99;
+}
+.product_window main .buy .button {
+  text-align: right;
+}
+.product_window main .buy .button button svg {
+  width: 100%;
+}
+.product_window main .buy .button button:hover svg rect {
+  fill: #FC0000;
+}
+.product_window main .buy .status {
+  margin-bottom: 20px;
+}
+.product_window main .buy .status .curcle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.product_window main .buy .status .line {
+  margin: 0;
+  font-size: 24px;
+}
+.product_window main .buy .coast {
+  font-weight: bold;
+}
+.product_window main .buy .coast .rubels {
+  font-size: 40px;
+}
+.product_window main .buy .coast .kopecks {
+  font-size: 24px;
+}
+.product_window .extro_info hr {
+  border-color: #141A99;
+}
+.product_window .extro_info .contaner {
+  margin-top: 2.5% !important;
+  margin-bottom: 5% !important;
+}
+.product_window .extro_info .contaner .head {
+  font-size: 28px;
+  font-weight: bold;
+}
+.product_window .extro_info .contaner table {
+  margin-top: 2.5%;
+  border-collapse: collapse;
+}
+.product_window .extro_info .contaner table td {
+  padding: 8px;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px dashed blue;
+  font-size: 20px;
+}
+.product_window .extro_info .contaner table .type {
+  padding-left: 5%;
+  vertical-align: top;
+}
+.product_window .extro_info .contaner table .text {
+  font-weight: bold;
+  width: 40%;
+}
+.product_window .extro_info .contaner table .last td {
+  border-bottom: none;
+}
+
 .grid_header {
   margin-left: 0%;
   margin-right: 10%;
@@ -689,6 +838,17 @@ header .search_bar form button:hover {
   grid-template-rows: 25% 25% 50%;
   grid-template-columns: 25% 40% 35%;
   width: 96%;
+}
+
+.product_window main .main_area {
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-areas: "name name name" "images info buy";
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 40% 40% 20%;
 }
 
 .logo_flex {
@@ -933,4 +1093,52 @@ main {
   gap: 5%;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
+}
+
+.product_window main .name {
+  display: flex;
+}
+.product_window main .images {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.product_window main .images .main_image {
+  flex: 9;
+}
+.product_window main .images .intaractive {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.product_window main .images .intaractive .button {
+  margin: 0 5px;
+}
+.product_window main .images .intaractive .small_img {
+  display: flex;
+  flex-direction: row;
+}
+.product_window main .info {
+  display: flex;
+  flex-direction: column;
+}
+.product_window main .buy {
+  display: flex;
+  flex-direction: column;
+}
+.product_window main .status {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.product_window main .coast {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.product_window .extro_info .contaner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15%;
 }

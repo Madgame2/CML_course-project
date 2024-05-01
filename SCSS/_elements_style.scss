@@ -396,6 +396,7 @@ header{
                             img{
                                 margin-top: 5px;
                                 border-radius: 20px;
+                                width: 200px;
                             }
                         }
                         .name_area{
@@ -643,6 +644,178 @@ header{
                     box-shadow: 0px 0px 15px 0px #141A99;
                 }
             }    
+        }
+    }
+}
+
+.product_window{
+
+    button{
+        background: 0;
+        border: 0;
+    }
+
+    main{
+        background-color: $catalog_bg;
+        color: $text_collor;
+        flex-direction: column;
+        .name{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .images{
+            margin-top: 2%;
+            justify-content: center;
+            align-items: center;
+            .main_image{
+                width: 350px;
+                .image{
+                    border-radius: 20px;
+                    width: 100%;
+                }
+            }
+            .intaractive{
+                align-items: center;
+                margin-top: 2%;
+                .button{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                   
+                    transition: all 0.09s linear;
+                }
+                .button:hover.clicked {
+                    background-color: #3400C6 !important;
+                }
+                .button:hover{
+                    //background-color: #14004D;
+                    box-shadow: 0px 0px 20px 1px rgba(0, 198, 186, 25%);
+                    cursor: pointer;
+                }
+                .small_img{
+                    .elem{
+                        margin: 0 5px;
+                        .img{
+                            margin: 5px;
+                            width: 80px;
+                            img{
+                                border-radius: 10px;
+                                width: 100%;
+                                border: 3px solid $catalog_bg;
+                            }
+                            .active{
+                                border: 3px solid $gui_bar_segment_active;
+
+                                transition: border 0.1s linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .info{
+            //align-items: center;
+            line-height: 30px;
+            .header{
+                margin-top: 2%;
+                font-size: 24px;
+                font-weight: bold;
+            }
+           .info_area{
+            
+            margin-top: 15px;
+            margin-left: 5px;
+            font-size: 18px;
+           } 
+        }
+        .buy{
+            margin-top: 2%;
+            .line{
+                hr{
+                    border: 2px dashed;
+                    border-color: #141A99;
+                }
+                margin-bottom: 20px ;
+            }
+            .button{
+                text-align: right;
+                button{
+                svg{
+                    width: 100%;
+                }
+            }
+            button:hover{
+                svg{
+
+                    rect{
+                        fill:#FC0000;
+                    }
+                }
+            }
+            }
+            .status{
+                margin-bottom: 20px;
+                .curcle{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                }
+                .line{
+                    margin: 0;
+                    font-size: 24px;
+                }
+            }
+            .coast{
+                font-weight: bold;
+                .rubels{
+                   font-size: 40px;
+                }
+                .kopecks{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .extro_info{
+        hr{
+            border-color: #141A99;
+        }
+        .contaner{
+            margin-top: 2.5%!important;
+            margin-bottom: 5%!important;
+
+            .head{
+                font-size: 28px;
+                font-weight: bold;
+            }
+            table{
+                margin-top: 2.5%;
+                border-collapse: collapse;
+                td {
+                    padding: 8px;
+                    padding-top: 2.5%;
+                    padding-bottom: 1%;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-bottom: 1px dashed blue;
+
+                    font-size: 20px;
+                }
+                .type{
+                    padding-left: 5%;
+                    vertical-align: top;
+                }
+                .text{
+                    font-weight: bold;
+                    width: 40%;
+                }
+                .last{
+                    td{
+                    border-bottom: none;
+                    }
+                }
+            }
         }
     }
 }

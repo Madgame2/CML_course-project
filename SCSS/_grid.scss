@@ -130,3 +130,22 @@
         }
     }
 }
+
+.product_window{
+    main{
+        .main_area{
+            margin-top: 20px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            display: grid;
+            grid-template-areas: 
+            "name name name"
+            "images info buy";
+
+            grid-template-rows: 10% 90%;
+            grid-template-columns: 40% 40% 20%;
+
+        }
+    }
+}

@@ -124,6 +124,7 @@ function build_audio_examples_bar(xml_doc){
             examples[i].getElementsByClassName("contaner")[0].getElementsByClassName("coast_contaner")[0].getElementsByClassName("rubels")[0].innerText=audio_products[sub_category_id][name_of_audo_cateforis[sub_category_id]][goods_id].rubles;
             examples[i].getElementsByClassName("contaner")[0].getElementsByClassName("coast_contaner")[0].getElementsByClassName("kopecks")[0].innerText='.'+audio_products[sub_category_id][name_of_audo_cateforis[sub_category_id]][goods_id].kopecks;
             examples[i].getElementsByClassName("contaner")[0].getElementsByTagName("a")[0].getElementsByTagName("img")[0].src=audio_products[sub_category_id][name_of_audo_cateforis[sub_category_id]][goods_id].main_img;
+            examples[i].getElementsByClassName("contaner")[0].getElementsByTagName("a")[0].setAttribute("href","product_window.html?type="+name_of_audo_cateforis[sub_category_id]+"&id="+Number(goods_id+1));
         }
     }
 
