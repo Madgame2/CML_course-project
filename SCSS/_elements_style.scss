@@ -6,6 +6,33 @@ body, html{
     flex-wrap: nowrap;
     flex-direction: column;
 }
+.burger{
+    display: none;
+}
+.hover_widnow{
+    display: none;
+    height: 100vh;
+    background-color: #0F0F0F;
+    display: block;
+    color: $text_collor;
+    padding-top: 10% !important;
+    .button {
+        width: 100%;
+        font-size: 20px;
+        height: 40px;
+        border: 1px solid $text_collor;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        a{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: $text_collor;
+        }
+    }
+}
 body{
     display: flex;
     max-width: 100%;
@@ -1070,6 +1097,108 @@ header{
                     background-color: #ff6161;
                 }
             }
+        }
+    }
+}
+
+@media (max-width:870px) {
+    .navigation_flex{
+        display: none !important;
+    }
+    .logo_flex{
+        margin-left: 2% !important;
+    .logo{
+        
+        font-size: 26px;
+        width: 100%;
+        svg{
+        width: 100%;
+        }
+    }
+}
+    .burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: $text_collor;
+        font-size: 40px;
+
+        background-color: #141A99;
+        border: 2px solid #1A58CE;
+        border-radius: 10px;
+    }
+    footer{
+        .about_us{
+            font-size: 8px;
+            span{
+                font-size: 10px !important;
+            }
+        }
+        .support{
+            margin: 0 !important;
+            span{
+                font-size: 10px !important  ;
+            }
+            a{
+                font-size: 8px;
+            }
+        }
+        .contacts{
+            font-size: 10px;
+            .params{
+                font-size: 8px;
+            }
+            .data{
+                font-size: 6px;
+            }
+        }
+    }
+    .search_bar{
+        form{
+            width: 80%;
+        }
+        svg{
+            display: none;
+        }
+    }
+    .main_container{
+        .name_of_site{
+            font-size: 55px;
+        }
+        .tagline{
+            font-size: 30px;
+        }
+    }
+    .main_container{
+        height: 1200px !important;
+        .audio_contaner{
+            .header{
+            font-size: 20px;
+            }
+            .button{
+                img{
+                    width: 120%;
+                }
+                span{
+                    margin-left: 25%;
+                font-size: 10px;
+                }
+            }
+        }
+        .video_contaner{
+            gap: 0;
+            margin-left: -10px;
+            .header{
+                font-size: 20px;
+                }
+                .button{
+                    img{
+                        width: 110px;
+                    }
+                    span{
+                    font-size: 10px;
+                    }
+                }
         }
     }
 }

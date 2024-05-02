@@ -149,3 +149,19 @@
         }
     }
 }
+
+@media (max-width:870px) {
+    .grid_header{
+        grid-template-areas: 
+        "logo  user_bar user_bar"
+        "search_bar search_bar search_bar";
+        margin: 0;
+
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 60% 20% 20%;
+    }
+    .main_container{
+        grid-template-rows: 30% 10% 25% 10% 25%;
+    }
+    
+}

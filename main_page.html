@@ -37,6 +37,7 @@
                             <span>Поиск</span>
                         </button>
                         </form>
+                        <button class="burger" onclick="on_burger_click()">≡</button>
                     </div>
                 </div>
                 <div style="grid-area: user_bar;" class="user_bar_flex">
@@ -63,35 +64,52 @@
                 </div>
             </div>
         </div>
+        <div class="hover_widnow">
+            <div class="button">
+                <a href="">
+                    Главная
+                </a>
+            </div>
+            <div class="button">
+                <a href="">
+                    Аудиотехника
+                </a>
+            </div>
+            <div class="button">
+                <a href="">
+                    Видеотехника
+                </a>
+            </div>
+        </div>
     </header>
     <main class="main_container">
-            <div class="welcome_board">
-                <img class="background" src="resurces/img/backGround_welcome_page.jpg" alt="">
-                <div class="welcome_board_contaner">
-                    <div class="name_of_site">Tech</br>&</br>Tune</div>
-                    <div class="tagline">Магазин аудио-</br>и видеотехники <span>Мы стараемся для вас!</span></div>
-                </div>
+        <div class="welcome_board">
+            <img class="background" src="resurces/img/backGround_welcome_page.jpg" alt="">
+            <div class="welcome_board_contaner">
+                <div class="name_of_site">Tech</br>&</br>Tune</div>
+                <div class="tagline">Магазин аудио-</br>и видеотехники <span>Мы стараемся для вас!</span></div>
             </div>
-            <div class="devide">devide</div>
-            <div class="audio_area">
-                <img class="background" src="resurces/img/photo_5231209036714728634_w.png" alt="">
-                <div class="audio_contaner">
-                    <div  style="grid-area: header" class="header">Аудиотехника</div>
-                    <div style="grid-area: elem1;" class="button audio_js"><a href="" onmouseover="hover_audio(this)" onmouseleave="back_to_normal()"><img src="resurces/img/audio_amplifier.png" alt=""></a><span>Звукоусилители</span></div>
-                    <div style="grid-area: elem2;" class="button audio_js"><a href="catalog.html?type=acustic_systems" onmouseover="hover_audio(this)" onmouseleave="back_to_normal()"><img src="resurces/img/audio_system_new.png" alt=""></a><span>Аккустические</br>системы</span></div>
-                    <div style="grid-area: elem3;" class="button audio_js"><a href="catalog.html?type=microphones_and_headphones" onmouseover="hover_audio(this)" onmouseleave="back_to_normal()"><img src="resurces/img/microphone_new.png" alt=""></a><span>Микрофоны</span></div>
-                </div>
+        </div>
+        <div class="devide">devide</div>
+        <div class="audio_area">
+            <img class="background" src="resurces/img/photo_5231209036714728634_w.png" alt="">
+            <div class="audio_contaner">
+                <div  style="grid-area: header" class="header">Аудиотехника</div>
+                <div style="grid-area: elem1;" class="button audio_js"><a href="" onmouseover="hover_audio(this)" onmouseleave="back_to_normal()"><img src="resurces/img/audio_amplifier.png" alt=""></a><span>Звукоусилители</span></div>
+                <div style="grid-area: elem2;" class="button audio_js"><a href="catalog.html?type=acustic_systems" onmouseover="hover_audio(this)" onmouseleave="back_to_normal()"><img src="resurces/img/audio_system_new.png" alt=""></a><span>Аккустические</br>системы</span></div>
+                <div style="grid-area: elem3;" class="button audio_js"><a href="catalog.html?type=microphones_and_headphones" onmouseover="hover_audio(this)" onmouseleave="back_to_normal()"><img src="resurces/img/microphone_new.png" alt=""></a><span>Микрофоны</span></div>
             </div>
-            <div class="devide">devide</div>
-            <div class="video_area">
-                <img class="background" src="resurces/img/photo_5231209036714728675_w.jpg" alt="">
-                <div class="video_contaner">
-                    <div style="grid-area: header" class="header">Видеотехника</div>
-                    <div style="grid-area: elem1;" class="button video_js"><a href="" onmouseover="hover_video(this)" onmouseleave="back_to_normal_video()"><img src="resurces/img/camera_icon.png" alt=""></a><span>Видеокамеры</span></div>
-                    <div style="grid-area: elem2;" class="button video_js"><a href="" onmouseover="hover_video(this)" onmouseleave="back_to_normal_video()"><img src="resurces/img/photo_icon.png" alt=""></a><span>Фотоаппараты</span></div>
-                    <div style="grid-area: elem3;" class="button video_js"><a href="" onmouseover="hover_video(this)" onmouseleave="back_to_normal_video()"><img src="resurces/img/monitor_icon.png" alt=""></a><span>Мониторы</span></div>
-                </div>
+        </div>
+        <div class="devide">devide</div>
+        <div class="video_area">
+            <img class="background" src="resurces/img/photo_5231209036714728675_w.jpg" alt="">
+            <div class="video_contaner">
+                <div style="grid-area: header" class="header">Видеотехника</div>
+                <div style="grid-area: elem1;" class="button video_js"><a href="" onmouseover="hover_video(this)" onmouseleave="back_to_normal_video()"><img src="resurces/img/camera_icon.png" alt=""></a><span>Видеокамеры</span></div>
+                <div style="grid-area: elem2;" class="button video_js"><a href="" onmouseover="hover_video(this)" onmouseleave="back_to_normal_video()"><img src="resurces/img/photo_icon.png" alt=""></a><span>Фотоаппараты</span></div>
+                <div style="grid-area: elem3;" class="button video_js"><a href="" onmouseover="hover_video(this)" onmouseleave="back_to_normal_video()"><img src="resurces/img/monitor_icon.png" alt=""></a><span>Мониторы</span></div>
             </div>
+        </div>
     </main>
     <footer>
         <div class="footer_contaner">
@@ -118,6 +136,7 @@
             </div>
         </div>
     </footer>
+    <script src="JS/mobule.js"></script>
     <script src="JS/main_page.js"></script>
 </body>
 </html>
