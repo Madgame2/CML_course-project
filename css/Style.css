@@ -747,6 +747,222 @@ header .search_bar form button:hover {
   border-bottom: none;
 }
 
+.basket {
+  color: #FFFFFF;
+}
+.basket main {
+  background-color: #1F1F1F;
+}
+.basket main .contaner {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.basket main .contaner .basket_head {
+  margin-bottom: 10%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.basket main .contaner .boady .header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.basket main .contaner .boady .text {
+  font-size: 20px;
+}
+.basket main .contaner .boady .text a {
+  color: #0085FF;
+}
+.basket main .contaner .boady .text a:active {
+  color: #000AFF;
+}
+.basket main .goods {
+  margin-top: 4%;
+  margin-left: 10%;
+  width: 100%;
+}
+.basket main .goods .basket_head {
+  margin-bottom: 5%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.basket main .goods .elem {
+  width: 85%;
+}
+.basket main .goods .elem hr {
+  border-color: #141A99;
+}
+.basket main .goods .elem .contaner {
+  margin: 0;
+  margin-top: 5%;
+}
+.basket main .goods .elem .contaner div {
+  margin-right: 2%;
+}
+.basket main .goods .elem .contaner .select_area {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.basket main .goods .elem .contaner .select_area div input {
+  display: none;
+}
+.basket main .goods .elem .contaner .select_area div .border {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.basket main .goods .elem .contaner .select_area div .border .contant {
+  display: none;
+}
+.basket main .goods .elem .contaner .select_area div input:checked ~ .border {
+  background-color: #1A58CE;
+}
+.basket main .goods .elem .contaner .select_area div input:checked ~ .border .contant {
+  display: block;
+}
+.basket main .goods .elem .contaner .image img {
+  width: 150px;
+  border-radius: 15px;
+}
+.basket main .goods .elem .contaner .info .contaner .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.basket main .goods .elem .contaner .info .contaner .status .curcle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+.basket main .goods .elem .contaner .info .contaner .status .text {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.basket main .goods .elem .contaner .intaractive .contaner {
+  align-items: center;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input {
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #4A4A4A;
+  color: #FFFFFF;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input input {
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 50%;
+  height: 40px;
+  border: none;
+  background-color: #404040;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input input:focus {
+  outline: none;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input button {
+  width: 25%;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  background-color: #0F0F0F;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input .plus {
+  font-size: 22px;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input .minus {
+  font-size: 22px;
+  color: #FFFFFF;
+  border-radius: 10px 0px 0px 10px;
+  cursor: pointer;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input button:active {
+  background-color: #3D3D3D;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .delete {
+  margin-top: 15%;
+  text-align: center;
+  font-size: 18px;
+  color: #939393;
+  transition: color 0.2s linear;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .delete:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+.basket main .goods .elem .contaner .coast .contaner {
+  font-weight: bold;
+}
+.basket main .goods .elem .contaner .coast .contaner .rubels {
+  font-size: 40px;
+}
+.basket main .goods .elem .contaner .coast .contaner .kopecks {
+  font-size: 20px;
+}
+.basket main .buy_ara .area .head {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.basket main .buy_ara .goods_list .list .elem {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.basket main .buy_ara .goods_list .list .elem .name {
+  width: 60%;
+}
+.basket main .buy_ara .goods_list .list .elem .coast {
+  width: 40%;
+  text-align: right;
+}
+.basket main .buy_ara .goods_list .list .elem .coast .rubels {
+  font-size: 35px;
+}
+.basket main .buy_ara .result hr {
+  border-color: #141A99;
+}
+.basket main .buy_ara .result .coast {
+  margin-top: 5%;
+  width: 100%;
+}
+.basket main .buy_ara .result .coast .result {
+  width: 60%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.basket main .buy_ara .result .coast .result_coast {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: end;
+  width: 40%;
+}
+.basket main .buy_ara .result .button {
+  margin-top: 5%;
+  width: 100%;
+  height: 45px;
+  background-color: #ED3939;
+  border: 4px solid #F55E67;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: all 0.2s linear;
+}
+.basket main .buy_ara .result .button:hover {
+  background-color: #FC0000;
+  transition: all 0.2s linear;
+}
+.basket main .buy_ara .result .button:active {
+  background-color: #ff6161;
+}
+
 .grid_header {
   margin-left: 0%;
   margin-right: 10%;
@@ -1141,4 +1357,102 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 15%;
+}
+
+.basket main .contaner {
+  display: flex;
+  flex-direction: column;
+}
+.basket main .contaner .boady {
+  display: flex;
+  flex-direction: column;
+}
+.basket main .contaner .boady .header {
+  justify-content: left;
+}
+.basket main .goods {
+  flex: 7;
+}
+.basket main .goods .elem .contaner {
+  display: flex;
+  flex-direction: row;
+}
+.basket main .goods .elem .contaner .select_area {
+  flex: 1;
+}
+.basket main .goods .elem .contaner .image {
+  flex: 3;
+}
+.basket main .goods .elem .contaner .info {
+  flex: 5;
+}
+.basket main .goods .elem .contaner .info .contaner {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.basket main .goods .elem .contaner .info .contaner div {
+  margin-bottom: 4%;
+}
+.basket main .goods .elem .contaner .info .contaner .status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.basket main .goods .elem .contaner .intaractive {
+  flex: 3;
+}
+.basket main .goods .elem .contaner .intaractive .contaner {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.basket main .goods .elem .contaner .intaractive .contaner .input {
+  display: flex;
+  flex-direction: row;
+  width: 125px;
+}
+.basket main .goods .elem .contaner .coast {
+  flex: 2;
+}
+.basket main .goods .elem .contaner .coast .contaner {
+  display: flex;
+  margin: 0;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+.basket main .buy_ara {
+  flex: 3;
+  margin-top: 4%;
+  margin-right: 15%;
+}
+.basket main .buy_ara .area {
+  display: flex;
+  flex-direction: column;
+}
+.basket main .buy_ara .area .goods_list .list {
+  display: flex;
+  flex-direction: column;
+}
+.basket main .buy_ara .area .goods_list .list .elem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.basket main .buy_ara .area .goods_list .list .elem .coast {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+.basket main .buy_ara .area .result {
+  display: flex;
+  flex-direction: column;
+}
+.basket main .buy_ara .area .result .coast {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }

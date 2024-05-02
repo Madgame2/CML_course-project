@@ -104,6 +104,9 @@ function build_page(xml_doc){
         lest_of_cell[2*i].innerHTML=xml_exto[i].getAttribute("name");
         lest_of_cell[2*i+1].innerHTML=xml_exto[i].innerHTML;
     }
+
+
+    document.getElementById("bascket_button").setAttribute("href","basket.html?type="+type+"&id="+id);
 }
 
 function pluss(){

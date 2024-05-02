@@ -572,8 +572,9 @@ function build_goods_element(xml_element){
     line.appendChild(newSvg);
     buy_contaner.appendChild(line);
 
-    var button = document.createElement("div");
+    var button = document.createElement("a");
     button.className= "button";
+    button.setAttribute("href","basket.html?type="+type+"&id="+xml_element.getElementsByTagName("id")[0].innerHTML);
 
     var newSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     newSvg.setAttribute('width', '200');

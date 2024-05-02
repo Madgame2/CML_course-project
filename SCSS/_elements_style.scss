@@ -819,3 +819,257 @@ header{
         }
     }
 }
+
+.basket{
+    color: $text_collor;
+    main{
+        background-color: #1F1F1F;
+        .contaner{
+        
+            margin-top: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            .basket_head{
+                margin-bottom: 10%;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .boady{
+                .header{
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 5%;
+                }
+                .text{
+                    font-size: 20px;
+                    a{
+                        color: #0085FF;
+                    }
+                    a:active{
+                        color: #000AFF;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .goods{
+            margin-top: 4%;
+            margin-left: 10%;
+            width: 100%;
+            .basket_head{
+                margin-bottom: 5%;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .elem{
+                width: 85%;
+                hr{
+                    border-color: #141A99;
+                }
+                .contaner{
+                    margin: 0;
+                    margin-top: 5%;
+                    div{
+                    margin-right: 2%;
+                    }
+                    .select_area{
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        div{
+                            //margin-left: 25%;
+                            input{
+                                display: none;
+                                }
+                            .border{
+                                width: 20px;
+                                height: 20px;
+                                border: 2px solid $text_collor;
+                                border-radius: 6px;
+                                cursor: pointer;
+                                .contant {
+                                    display: none;
+                                    } 
+                            }
+                            input:checked~.border{
+                                background-color: $active_scroll    ;
+                                .contant {
+                                display: block;
+                           
+                            }
+                        }   
+                    }
+                    }
+                    .image{
+                        img{
+                            width: 150px;
+                            border-radius: 15px;
+                        }
+                    }
+                    .info{
+                        .contaner{
+                            .name{
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+                            .status{
+                                .curcle{
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50%;
+                                    background-color: blueviolet;
+                                }
+                                .text{
+                                    font-size: 16px;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                    .intaractive{
+                        .contaner{
+                            align-items: center;
+                            .input{
+                                align-items: center;
+                                border-radius:  10px;
+                                border: 1px solid #4A4A4A;
+                                color: $text_collor;
+                                input{
+                                    font-size: 20px;    
+                                    text-align: center;
+                                    color: $text_collor;
+                                    width: 50%;
+                                    height: 40px;
+                                    border: none;
+                                    background-color: #404040;
+                                }
+                                input:focus{
+                                    outline: none;
+                                }
+                                button{
+                                    
+                                    width: 25%;
+                                    height: 40px;
+                                    font-size: 20px;
+                                    border: none;
+                                    background-color: #0F0F0F;
+                                }
+                                .plus{
+                                    font-size: 22px;  
+                                    color: $text_collor;
+                                    border-radius: 0px 10px 10px 0px;
+                                    cursor: pointer;
+                                }
+                                .minus{
+                                    font-size: 22px;  
+                                    color: $text_collor;
+                                    border-radius: 10px 0px 0px 10px;
+                                    cursor: pointer;
+                                }
+                                button:active{
+                                    background-color: #3D3D3D;
+                                }
+                            }
+                            .delete{
+                                margin-top: 15%;
+                                text-align: center;
+                                font-size: 18px;
+                                color: #939393  ;
+                                transition: color 0.2s linear;
+                            }
+                            .delete:hover{
+                                color: $text_collor;
+                                cursor: pointer;
+                                transition: color 0.2s linear;
+                            }
+                        }
+                    }
+                    .coast{
+                        .contaner{
+                            font-weight: bold;
+                            .rubels{
+                                font-size: 40px;
+                            }
+                            .kopecks{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .buy_ara{
+            .area{
+                .head{
+                    font-size: 40px;
+                    font-weight: bold;
+                    margin-bottom: 5%;
+                    }
+                }
+                .goods_list{
+                    .list{
+                        .elem{
+                            font-size: 18px;
+                            font-weight: bold;
+                            margin-bottom: 5%;
+                            .name{
+                                width: 60%;
+                            }
+                            .coast{
+                                width: 40%;
+                                text-align: right;
+                                .rubels{
+                                    font-size: 35px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            .result{
+                hr{
+                    border-color: #141A99;
+                }
+                .coast{
+                    margin-top: 5%;
+                    width: 100%;
+                    .result{
+                        width: 60%;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                    .result_coast{
+                        font-size: 42px;
+                        font-weight: bold;
+                        text-align: end;
+                        width: 40%;
+                    }
+                }
+                .button{
+                    margin-top: 5%;
+                    width: 100%;
+                    height: 45px;
+
+                    background-color: #ED3939;
+                    border: 4px solid #F55E67;
+                    border-radius: 10px;
+
+                    color: $text_collor;
+                    font-size: 20px;
+
+                    transition: all 0.2s linear;
+                }
+                .button:hover{
+                    background-color: #FC0000;
+                    transition: all 0.2s linear;
+                }
+                .button:active{
+                    background-color: #ff6161;
+                }
+            }
+        }
+    }
+}

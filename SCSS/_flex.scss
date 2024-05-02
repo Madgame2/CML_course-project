@@ -331,3 +331,116 @@ main{
         }
     }
 }
+
+.basket{
+    main{
+        .contaner{
+            display: flex;
+            flex-direction: column;
+
+            .boady{
+                display: flex;
+                flex-direction: column;
+                .header{
+                    justify-content: left;
+                }
+            }
+        }
+
+            .goods{
+                flex: 7;
+
+                .elem{
+                    .contaner{
+                        display: flex;
+                        flex-direction: row;
+                        .select_area{
+                            flex: 1;
+                        }
+                        .image{
+                            flex: 3;
+                        }
+                        .info{
+                            flex: 5;
+                            .contaner{
+                                margin: 0;
+                                display: flex;
+                                flex-direction: column;
+                                div{
+                                    margin-bottom: 4%;
+                                }
+                                .status{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                        .intaractive{
+                            flex: 3;
+                            .contaner{
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0;
+                                .input{
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 125px;
+                                }
+                            }
+                        }
+                        .coast{
+                            flex: 2;
+                            .contaner{
+                                display: flex;
+                                margin: 0;
+                                align-items: baseline;
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
+                }
+            }
+            .buy_ara{
+                flex: 3;
+                margin-top: 4%;
+                margin-right: 15%;
+                .area{
+                    display: flex;
+                    flex-direction: column;
+
+                    .goods_list{
+                        .list{
+                            display: flex;
+                            flex-direction: column;
+
+                            .elem{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: flex-end;
+
+                                .coast{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: baseline;
+                                    flex-wrap: nowrap;
+                                    justify-content: end;
+                                }
+                            }
+                        }
+                    }
+                    .result{
+                        display: flex;
+                        flex-direction: column;
+                        .coast{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: baseline;
+                        }
+                    }
+                }
+            }
+        
+    }
+}
