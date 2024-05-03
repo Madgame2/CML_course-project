@@ -47,3 +47,4 @@ function back_to_normal_video(){
         elements[i].querySelector('span').style.transform = 'translate(0, 0)';
     }
 }
+

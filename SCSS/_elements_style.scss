@@ -12,6 +12,7 @@ body, html{
 .hover_widnow{
     display: none;
     height: 100vh;
+    width: 100%;
     background-color: #0F0F0F;
     display: block;
     color: $text_collor;
@@ -1163,10 +1164,10 @@ header{
     }
     .main_container{
         .name_of_site{
-            font-size: 55px;
+            font-size: 50px;
         }
         .tagline{
-            font-size: 30px;
+            font-size: 20px;
         }
     }
     .main_container{
@@ -1199,6 +1200,72 @@ header{
                     font-size: 10px;
                     }
                 }
+        }
+    }
+
+    .logo_contaner{
+        .logo_flex{
+            margin-top: 0 !important;
+        .logo{
+            font-size: 24px !important;
+            width: 100%;
+            svg{
+            width: 100%;
+            height: 100%;
+            }
+        }
+    }
+    }
+    .user_status{
+
+        font-size: 10px !important;
+        margin-right: 2% !important;
+        //justify-content: end !important;
+
+        div{
+            margin-bottom: 15% !important;
+        }
+        a{
+            margin-bottom: 15% !important;
+        }
+    }
+    .authorization{
+        .main-area{
+            width: 70% !important;
+        }
+    }
+
+    .sign_up{
+        .sign_up_contaner{
+            .logo_contaner{
+                .logo_flex{
+                    margin-top: 0 !important;
+                .logo{
+                    font-size: 24px !important;
+                    width: 30px;
+                    svg{
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
+                }
+            }
+        }
+        .user_status{
+
+            font-size: 10px !important;
+            margin-right: 2% !important;
+            //justify-content: end !important;
+    
+            div{
+                margin-bottom: auto !important;
+            }
+            a{
+                margin-bottom: auto !important;
+            }
+        }
+        .main-area{
+            width: 70% !important;
         }
     }
 }
