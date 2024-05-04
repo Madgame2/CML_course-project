@@ -338,6 +338,11 @@ header{
                 a{
                     font-size: 24px;
                     color: $text_collor;
+                    img{
+                        width: 40px;
+                        border-radius: 15px;
+                        display: none;
+                    }
                 }
 
             }
@@ -1116,7 +1121,7 @@ header{
         width: 100%;
         }
     }
-}
+    }
     .burger{
         display: block;
         width: 40px;
@@ -1266,6 +1271,28 @@ header{
         }
         .main-area{
             width: 70% !important;
+        }
+    }
+
+    .intermediate_conataner{
+        display: block !important;
+        margin-right: 5%;
+
+        .examples{
+            display: none !important;
+        }
+
+        .categories{
+            ul{
+
+                li{
+                    a{
+                        img{
+                            display: block;
+                        }
+                    }
+                }
+            }
         }
     }
 }

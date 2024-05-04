@@ -482,5 +482,20 @@ main{
 
         }
     }
-    
+    .intermediate_conataner{
+        .categories{
+
+            ul{
+                li{
+                    a{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        gap: 5%;
+                    }
+                }
+            }
+        }
+    }
 }

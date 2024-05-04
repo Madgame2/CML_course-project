@@ -355,6 +355,11 @@ header .search_bar form button:hover {
   font-size: 24px;
   color: #FFFFFF;
 }
+.intermediate_conataner .categories ul li a img {
+  width: 40px;
+  border-radius: 15px;
+  display: none;
+}
 .intermediate_conataner .categories ul li:hover {
   background: #181818;
 }
@@ -1127,6 +1132,16 @@ header .search_bar form button:hover {
   .sign_up .main-area {
     width: 70% !important;
   }
+  .intermediate_conataner {
+    display: block !important;
+    margin-right: 5%;
+  }
+  .intermediate_conataner .examples {
+    display: none !important;
+  }
+  .intermediate_conataner .categories ul li a img {
+    display: block;
+  }
 }
 .grid_header {
   margin-left: 0%;
@@ -1667,5 +1682,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .intermediate_conataner .categories ul li a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5%;
   }
 }
