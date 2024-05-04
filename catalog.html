@@ -35,7 +35,7 @@
         <div class="navigation_menu">
             <div class="grid_header">
                 <div style="grid-area: logo;" class="logo_flex">
-                    <a href="main_page.html" class="logo_flex">
+                    <a href="" class="logo_flex">
                         <div class="logo">
                             <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="35" cy="35.6801" r="35" fill="#D9D9D9"/>
@@ -45,8 +45,8 @@
                     </a>
                 </div>
                 <div style="grid-area: navigation;" class="navigation_flex">
-                    <a href="main_page.html" class="navigation_element_flex"><div class="navigation_element ">Главная</div></a>
-                    <a href="audio_intemediate_page.html" class="navigation_element_flex selected"><div class="navigation_element">Аудио</br> техника</div></a>
+                    <a href="" class="navigation_element_flex selected"><div class="navigation_element ">Главная</div></a>
+                    <a href="audio_intemediate_page.html" class="navigation_element_flex"><div class="navigation_element">Аудио</br> техника</div></a>
                     <a href="video_intemediate_page.html"  class="navigation_element_flex"><div class="navigation_element">Видео</br> техника</div></a>
                 </div>
                 <div style="grid-area: search_bar;" class="search_bar_flex">
@@ -61,6 +61,7 @@
                             <span>Поиск</span>
                         </button>
                         </form>
+                        <button class="burger" onclick="on_burger_click()">≡</button>
                     </div>
                 </div>
                 <div style="grid-area: user_bar;" class="user_bar_flex">
@@ -87,10 +88,46 @@
                 </div>
             </div>
         </div>
+        <div class="hover_widnow">
+            <div class="button">
+                <a href="main_page.html">
+                    Главная
+                </a>
+            </div>
+            <div class="button">
+                <a href="audio_intemediate_page.html">
+                    Аудиотехника
+                </a>
+            </div>
+            <div class="button">
+                <a href="video_intemediate_page.html">
+                    Видеотехника
+                </a>
+            </div>
+        </div>
     </header>
     <main>
         <div class="contaner">
             <div class="params_area">
+                <div class="mobyle_extra_erea">
+                    <span id ="mobyle_name_area">test</span> 
+                    <div class="button">
+                        <button onclick="on_mobyle_filter_button_click()"> 
+                            <div class="svg">
+                                <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.000427246" y1="1.60522" x2="22.9992" y2="1.60522" stroke="#A7A7A7"/>
+                                    <line y1="7.52637" x2="22.9996" y2="7.52637" stroke="#A7A7A7"/>
+                                    <line x1="0.000427246" y1="13.4474" x2="23" y2="13.4474" stroke="#A7A7A7"/>
+                                    <rect x="10.5742" y="0.5" width="2" height="2.15789" fill="black" stroke="#A7A7A7"/>
+                                    <rect x="16.2764" y="6.55261" width="2" height="2.15789" fill="black" stroke="#A7A7A7"/>
+                                    <rect x="3.73163" y="12.3421" width="2" height="2.15789" fill="black" stroke="#A7A7A7"/>
+                                </svg>                                    
+                            </div>
+                            <div>Сортировка и фильтыр</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="intermaediate_area">
                 <div class="main_area">
                     <span class="type_of_catalog" id="type_of_catalog">test</span>
                     <span class="filters">Фильтры:</span>
@@ -98,6 +135,7 @@
 
                     </div>
                 </div>
+            </div>
             </div>
             <div class="goods_area">
                 <div class="contaner">
@@ -131,5 +169,6 @@
             </div>
         </div>
     </footer>
+    <script src="JS/mobule.js"></script>
 </body>
 </html>

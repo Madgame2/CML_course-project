@@ -9,6 +9,9 @@ body, html{
 .burger{
     display: none;
 }
+.mobyle_extra_erea{
+    display: none;
+}
 .hover_widnow{
     display: none;
     height: 100vh;
@@ -18,7 +21,7 @@ body, html{
     color: $text_collor;
     padding-top: 10% !important;
     .button {
-        width: 100%;
+        width: 90%;
         font-size: 20px;
         height: 40px;
         border: 1px solid $text_collor;
@@ -574,6 +577,7 @@ header{
                                         height: 20px;
                                         border-radius: 8px;
                                         border: 2px solid $text_collor;
+                                        flex-shrink: 0;
                                         .contant{
                                             display: none;
                                         }
@@ -1289,6 +1293,106 @@ header{
                     a{
                         img{
                             display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .catalog{
+        .contaner{
+            flex-direction: column !important;
+            .params_area{
+                .main_area{
+                z-index: 5;
+                display: none;
+
+                .type_of_catalog{
+                    display: none;
+                }
+                .scroll_area{
+                    .scroll{
+                        display: none;
+                    }
+                }
+                }
+                .mobyle_extra_erea{
+                    background-color: #1F1F1F;
+                    span{
+                        margin-top: 2%;
+                        font-size: 20px;
+                        margin-left: 5%;
+                    }
+                    .button{
+                        text-align: center;
+                        button{
+                            color: $text_collor;
+                            width: 90%;
+                            height: 35px;
+                            border: 2px solid #1A58CE;
+                            background-color: #141A99;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+            .goods_area{
+                .contaner{
+                    .intermediate_div{
+                        width: 45%;
+                        margin-bottom: 10px;
+                        .goods{
+                            .extra{
+                                display: none !important;
+                            }
+                            .img{
+                                img{
+                                    width: 125px;
+                                    height: 125px;
+                                }
+                            }
+                            .name{
+                                margin-left: 5%;
+                                .name_cont{
+                                    font-size: 10px;
+                                }
+                            }
+                            .status{
+                                margin-left: 5%;
+                                .curcle{
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                                .status_cont{
+                                    font-size: 10px;
+                                }
+                            }
+                            .buy{
+                                width: 100%;
+                                .buy_contaner{
+                                    width: 100%;
+                                    align-items: start;
+                                    
+                                    .coast{
+                                        margin-left: 5%;
+                                        .rubels{
+                                            font-size: 20px;
+                                        }
+                                        .kopecks{
+                                            font-size: 10px;
+                                        }
+                                    }
+                                    .line{
+                                        display: none;
+                                    }
+                                    .button{
+                                        margin-top: 1%;
+                                        margin-right: 5%;
+                                        margin-left: 5%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

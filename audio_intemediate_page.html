@@ -35,7 +35,7 @@
         <div class="navigation_menu">
             <div class="grid_header">
                 <div style="grid-area: logo;" class="logo_flex">
-                    <a href="main_page.html" class="logo_flex">
+                    <a href="" class="logo_flex">
                         <div class="logo">
                             <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="35" cy="35.6801" r="35" fill="#D9D9D9"/>
@@ -45,8 +45,8 @@
                     </a>
                 </div>
                 <div style="grid-area: navigation;" class="navigation_flex">
-                    <a href="main_page.html" class="navigation_element_flex"><div class="navigation_element ">Главная</div></a>
-                    <a href="audio_intemediate_page.html" class="navigation_element_flex selected"><div class="navigation_element">Аудио</br> техника</div></a>
+                    <a href="" class="navigation_element_flex selected"><div class="navigation_element ">Главная</div></a>
+                    <a href="audio_intemediate_page.html" class="navigation_element_flex"><div class="navigation_element">Аудио</br> техника</div></a>
                     <a href="video_intemediate_page.html"  class="navigation_element_flex"><div class="navigation_element">Видео</br> техника</div></a>
                 </div>
                 <div style="grid-area: search_bar;" class="search_bar_flex">
@@ -61,6 +61,7 @@
                             <span>Поиск</span>
                         </button>
                         </form>
+                        <button class="burger" onclick="on_burger_click()">≡</button>
                     </div>
                 </div>
                 <div style="grid-area: user_bar;" class="user_bar_flex">
@@ -85,6 +86,23 @@
                     </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="hover_widnow">
+            <div class="button">
+                <a href="main_page.html">
+                    Главная
+                </a>
+            </div>
+            <div class="button">
+                <a href="audio_intemediate_page.html">
+                    Аудиотехника
+                </a>
+            </div>
+            <div class="button">
+                <a href="video_intemediate_page.html">
+                    Видеотехника
+                </a>
             </div>
         </div>
     </header>
@@ -503,5 +521,6 @@
         </div>
     </footer>
     <script src="JS/goods.js"></script>
+    <script src="JS/mobule.js"></script>
 </body>
 </html>

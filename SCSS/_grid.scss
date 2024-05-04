@@ -164,5 +164,23 @@
         grid-template-rows: 30% 10% 25% 10% 25%;
     }
 
-    
+    .catalog{
+        .goods_area{
+            .contaner{
+                div{
+                    .goods{
+                        grid-template-areas:
+                        "img"
+                        "name"
+                        "status"
+                        "buy" !important;
+
+                        grid-template-rows: 50% 20% 5% 25% !important;
+                        grid-template-columns: 100% !important;
+                        height: 250px !important;
+                    }
+                }
+            }
+        }
+    }
 }

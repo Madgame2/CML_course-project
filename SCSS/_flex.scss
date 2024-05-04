@@ -8,8 +8,8 @@
 .hover_widnow{
     display: none;
     flex-direction: column;
-    padding: 2%;
     gap: 1%;
+    align-items: center;
     .button a{
         display: flex;
     }
@@ -497,5 +497,43 @@ main{
                 }
             }
         }
+    }
+
+    .catalog{
+        .contaner{
+        flex-direction: column !important;
+
+        .mobyle_extra_erea{
+            display: flex;
+            flex-direction: column;
+            
+
+            .button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                gap: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                }
+            }
+        }
+        .params_area{
+            flex: none !important;
+            .intermaediate_area{
+                display: none;
+            }
+        }
+        .goods_area{
+            .contaner{
+                flex-direction: row !important;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
     }
 }

@@ -23,6 +23,7 @@ function build_page(xml_doc){
     }
 
     document.getElementById("type_of_catalog").innerHTML=my_element.getAttribute("name");
+    document.getElementById("mobyle_name_area").innerHTML=my_element.getAttribute("name");
 
     var filters = my_element.getElementsByTagName("filters")[0].getElementsByTagName("filter");
 
@@ -444,6 +445,7 @@ function build_simple_filter(id,name, list){
 
 function build_goods_element(xml_element){
     var div = document.createElement("div");
+    div.className="intermediate_div";
 
     var goods= document.createElement("div");
     goods.className="goods";
