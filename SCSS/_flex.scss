@@ -536,4 +536,18 @@ main{
     }
 
     }
+
+    .basket{
+        main{
+            flex-direction: column;
+
+            .goods{
+                .elem{
+                    .contaner{
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
 }

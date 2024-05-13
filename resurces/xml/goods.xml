@@ -6,7 +6,7 @@
                 <filter type="scroll" var="coast" name="Цена"></filter>
                 <filter type="simple" var="brend" name="Бренды">
                     <point id="1">JBL</point>
-                    <point id="2">Logitech </point>
+                    <point id="2">Logitech</point>
                     <point id="3">Marshall</point>
                     <point id="4">CANYON</point>
                     <point id="5">SONY</point>
@@ -416,33 +416,355 @@
             <filters>
                 <filter type="scroll" var="coast" name="Цена"></filter>
                 <filter type="simple" var="brend" name="Бренды">
-                    <point id="1">JBL</point>
-                    <point id="2">Logitech </point>
-                    <point id="3">Marshall</point>
-                    <point id="4">CANYON</point>
-                    <point id="5">SONY</point>
-                    <point id="6">SVEN</point>
-                    <point id="7">HyperX</point>
-                    <point id="8">HONOR</point>
-                    <point id="8">FIFINE</point>
-                    <point id="8">BOYA</point>
-                    <point id="9">Havit</point>
-                    <point id="10">REDRAGON</point>
-                    <point id="11">Infinix</point>
-                    <point id="12">Apple</point>
+                    <point id="1">LG</point>
+                    <point id="2">VIPE</point>
+                    <point id="3">Dialog</point>
+                    <point id="4">SVEN</point>
+                    <point id="5">RITMIX</point>
+                    <point id="6">SOUNDMAX</point>
                 </filter>
                 <filter type="scroll" var="power" name="Мощность"></filter>
-                <filter type="simple" var="connecton_type" name="Тип подключения">
-                    <point id="1">Беспроводное (True wireless)</point>
-                    <point id="2">Проводное</point>
-                    <point id="3">Беспроводное (съемный аудиокабель)</point>
-                    <point id="4">Беспроводное</point>
+                <filter type="simple" var="Radio_type" name="Тип магнитолы ">
+                    <point id="1">Bluetooth колонка</point>
+                    <point id="2">Минисистема</point>
+                    <point id="3">Акустическая система</point>
+                    <point id="4">Flash-магнитола</point>
                 </filter>
             </filters>
-
+            <item>
+                <id>1</id>
+                <name>Акустическая система Sven PS-800</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>569</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Акустическая система Sven PS-800\ps-800-sven-akusticheskaya-sistema-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Акустическая система Sven PS-800\ps-800-sven-akusticheskaya-sistema-1_600.jpg</img>
+                    <img>resurces\img\Акустическая система Sven PS-800\ps-800-sven-akusticheskaya-sistema-2_600.jpg</img>
+                    <img>resurces\img\Акустическая система Sven PS-800\ps-800-sven-akusticheskaya-sistema-3_600.jpg</img>
+                    <img>resurces\img\Акустическая система Sven PS-800\ps-800-sven-akusticheskaya-sistema-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">100</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Акустическая система</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">USB, MicroSD</element>
+                    <element type="brend" name="Бренд: ">SVEN</element>
+                    <element type="Bluetooth" name="Bluetooth:">ДА</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">ДА</element>
+                </extra>
+            </item>
+            <item>
+                <id>2</id>
+                <name>Колонка для вечеринок Dialog Oscar AO-11</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>225</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Колонка для вечеринок Dialog Oscar AO-11\oscar-ao-11-akusticheskaya-kolonka-dialog-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Колонка для вечеринок Dialog Oscar AO-11\oscar-ao-11-akusticheskaya-kolonka-dialog-1_600.jpg</img>
+                    <img>resurces\img\Колонка для вечеринок Dialog Oscar AO-11\oscar-ao-11-akusticheskaya-kolonka-dialog-2_600.jpg</img>
+                    <img>resurces\img\Колонка для вечеринок Dialog Oscar AO-11\oscar-ao-11-akusticheskaya-kolonka-dialog-4_600.jpg</img>
+                    <img>resurces\img\Колонка для вечеринок Dialog Oscar AO-11\oscar-ao-11-akusticheskaya-kolonka-dialog-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">26</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Акустическая система</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">USB, MicroSD</element>
+                    <element type="brend" name="Бренд: ">Dialog</element>
+                    <element type="Bluetooth" name="Bluetooth:">ДА</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">ДА</element>
+                </extra>
+            </item>
+            <item>
+                <id>3</id>
+                <name>Минисистема LG X-Boom CK99+NK99</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>987</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Минисистема LG X-Boom CK99+NK99\-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Минисистема LG X-Boom CK99+NK99\-1_600.jpg</img>
+                    <img>resurces\img\Минисистема LG X-Boom CK99+NK99\-4_600.jpg</img>
+                    <img>resurces\img\Минисистема LG X-Boom CK99+NK99\-7_600.jpg</img>
+                    <img>resurces\img\Минисистема LG X-Boom CK99+NK99\-11_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">500</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Минисистема</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">USB, MicroSD</element>
+                    <element type="brend" name="Бренд: ">LG</element>
+                    <element type="Bluetooth" name="Bluetooth:">ДА</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">ДА</element>
+                </extra>
+            </item>
+            <item>
+                <id>4</id>
+                <name>Музыкальный центр SOUNDMAX SM-MS4207</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>344</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Музыкальный центр SOUNDMAX SM-MS4207 (черный)\sm-ms4207-chernyy-muzykalnyy-centr-soundmax-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Музыкальный центр SOUNDMAX SM-MS4207 (черный)\sm-ms4207-chernyy-muzykalnyy-centr-soundmax-1_600.jpg</img>
+                    <img>resurces\img\Музыкальный центр SOUNDMAX SM-MS4207 (черный)\sm-ms4207-chernyy-muzykalnyy-centr-soundmax-2_600.jpg</img>
+                    <img>resurces\img\Музыкальный центр SOUNDMAX SM-MS4207 (черный)\sm-ms4207-chernyy-muzykalnyy-centr-soundmax-4_600.jpg</img>
+                    <img>resurces\img\Музыкальный центр SOUNDMAX SM-MS4207 (черный)\sm-ms4207-chernyy-muzykalnyy-centr-soundmax-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">80</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Bluetooth колонка</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">USB</element>
+                    <element type="brend" name="Бренд: ">SOUNDMAX</element>
+                    <element type="Bluetooth" name="Bluetooth:">ДА</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">НЕТ</element>
+                </extra>
+            </item>
+            <item>
+                <id>5</id>
+                <name>Колонка для вечеринок Vipe Nitro X7</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>983</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Колонка для вечеринок Vipe Nitro X7\vpmsnitrox7-besprovodnaya-muzykalnaya-sistema-vipe-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Колонка для вечеринок Vipe Nitro X7\vpmsnitrox7-besprovodnaya-muzykalnaya-sistema-vipe-1_600.jpg</img>
+                    <img>resurces\img\Колонка для вечеринок Vipe Nitro X7\vpmsnitrox7-besprovodnaya-muzykalnaya-sistema-vipe-2_600.jpg</img>
+                    <img>resurces\img\Колонка для вечеринок Vipe Nitro X7\vpmsnitrox7-besprovodnaya-muzykalnaya-sistema-vipe-3_600.jpg</img>
+                    <img>resurces\img\Колонка для вечеринок Vipe Nitro X7\vpmsnitrox7-besprovodnaya-muzykalnaya-sistema-vipe-6_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">280</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Bluetooth колонка</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">USB</element>
+                    <element type="brend" name="Бренд: ">VIPE</element>
+                    <element type="Bluetooth" name="Bluetooth:">ДА</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">ДА</element>
+                </extra>
+            </item>
+            <item>
+                <id>6</id>
+                <name>Минисистема LG CJ45</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>905</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Минисистема LG CJ45\good_img_e02651da-c916-11e7-80c9-00505684744b_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Минисистема LG CJ45\good_img_e02651da-c916-11e7-80c9-00505684744b_600.jpg</img>
+                    <img>resurces\img\Минисистема LG CJ45\good_img_e02651d9-c916-11e7-80c9-00505684744b_600 (1).jpg</img>
+                    <img>resurces\img\Минисистема LG CJ45\good_img_e82d8133-c916-11e7-80c9-00505684744b_600.jpg</img>
+                    <img>resurces\img\Минисистема LG CJ45\good_img_e02651da-c916-11e7-80c9-00505684744b_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">720</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Минисистема</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">USB</element>
+                    <element type="brend" name="Бренд: ">LG</element>
+                    <element type="Bluetooth" name="Bluetooth:">ДА</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">ДА</element>
+                </extra>
+            </item>
+            <item>
+                <id>7</id>
+                <name>Аудиосистема LG OL45</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>699</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Аудиосистема LG OL45\ol45-audiosistema-lg-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Аудиосистема LG OL45\ol45-audiosistema-lg-1_600.jpg</img>
+                    <img>resurces\img\Аудиосистема LG OL45\ol45-audiosistema-lg-2_600.jpg</img>
+                    <img>resurces\img\Аудиосистема LG OL45\ol45-audiosistema-lg-6_600.jpg</img>
+                    <img>resurces\img\Аудиосистема LG OL45\ol45-audiosistema-lg-8_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">220</element>
+                    <element type="Radio_type" name="Тип магнитолы: ">Минисистема</element>
+                    <element type="Supported_media" name="Поддерживаемые носители: ">CD, USB</element>
+                    <element type="brend" name="Бренд: ">LG</element>
+                    <element type="Bluetooth" name="Bluetooth:">НЕТ</element>
+                    <element type="Microphone_input" name="Вход для микрофона ">НЕТ</element>
+                </extra>
+            </item>
+        </sub_category>
+        <sub_category type="flavor_enhancers" name="Усилители звука">
+            <filters>
+                <filter type="scroll" var="coast" name="Цена"></filter>
+                <filter type="simple" var="brend" name="Бренды">
+                    <point id="1">Yamaha</point>
+                    <point id="2">Denon</point>
+                    <point id="3">WiiM</point>
+                    <point id="4">SMSL</point>
+                    <point id="5">Taga Harmony</point>
+                    <point id="6">Sony</point>
+                </filter>
+                <filter type="simple" var="type" name="Тип ">
+                    <point id="1">AV ресивер</point>
+                    <point id="2">AV процессор</point>
+                    <point id="3">AV усилитель</point>
+                    <point id="4">Интегральный усилитель</point>
+                </filter>
+            </filters>
+            <item>
+                <id>1</id>
+                <name>Усилитель интегрированный Denon PMA-1700NE</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1872</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\tests\Denon_PMA_1700NE.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\tests\Denon_PMA_1700NE.jpg</img>
+                    <img>resurces\img\tests\Denon_PMA_1700NE_1.jpg</img>
+                    <img>resurces\img\tests\Denon_PMA_1700NE.jpg</img>
+                    <img>resurces\img\tests\Denon_PMA_1700NE_1.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">290</element>
+                    <element type="type" name="Тип: ">Интегральный усилитель</element>
+                    <element type="output" name="Выходы: ">На запись, на наушники</element>
+                    <element type="brend" name="Бренд: ">Denon</element>
+                    <element type="wight" name="Весс:">17.6 кг</element>
+                    <element type="frequency_range" name="Воспроизводимый диапазон частот: ">20 Гц - 20 кГц</element>
+                </extra>
+            </item>
+            <item>
+                <id>2</id>
+                <name>Усилитель TAGA Harmony TA-25 Mini</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>275</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Усилитель TAGA Harmony TA-25 Mini\usilitel-taga-harmony-ta-25-mini-1.jpg.webp</main_img>
+                <sub_img>
+                    <img>resurces\img\Усилитель TAGA Harmony TA-25 Mini\usilitel-taga-harmony-ta-25-mini-1.jpg.webp</img>
+                    <img>resurces\img\Усилитель TAGA Harmony TA-25 Mini\usilitel-taga-harmony-ta-25-mini-2.jpg.webp</img>
+                    <img>resurces\img\Усилитель TAGA Harmony TA-25 Mini\usilitel-taga-harmony-ta-25-mini.jpg.webp</img>
+                    <img>resurces\img\Усилитель TAGA Harmony TA-25 Mini\usilitel-taga-harmony-ta-25-mini.jpg (1).webp</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">50</element>
+                    <element type="type" name="Тип: ">Интегральный усилитель</element>
+                    <element type="output" name="Выходы: ">наушники 3.5 мм, линейный 1</element>
+                    <element type="brend" name="Бренд: ">Taga Harmony</element>
+                    <element type="wight" name="Весс:">0.46 кг</element>
+                    <element type="frequency_range" name="Воспроизводимый диапазон частот: ">30 Гц — 18kГц</element>
+                </extra>
+            </item>
+            <item>
+                <id>3</id>
+                <name>AV ресивер Sony STR-DH590</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>2705</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\AV ресивер Sony STR-DH590\606b98ce5b55ae81381f3ea75ecc8083.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\AV ресивер Sony STR-DH590\606b98ce5b55ae81381f3ea75ecc8083.jpg</img>
+                    <img>resurces\img\AV ресивер Sony STR-DH590\9b268315aea74577ac4f671433f7b1ba.jpg</img>
+                    <img>resurces\img\AV ресивер Sony STR-DH590\606b98ce5b55ae81381f3ea75ecc8083.jpg</img>
+                    <img>resurces\img\AV ресивер Sony STR-DH590\9b268315aea74577ac4f671433f7b1ba.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">145</element>
+                    <element type="type" name="Тип: ">AV ресивер</element>
+                    <element type="output" name="Выходы: ">	HDMI x4, коаксиальный x1, оптический x1, линейный x4</element>
+                    <element type="brend" name="Бренд: ">Sony</element>
+                    <element type="wight" name="Весс:">	7.1 кг</element>
+                    <element type="frequency_range" name="Воспроизводимый диапазон частот: ">20 - 20000 Гц</element>
+                </extra>
+            </item>
+            <item>
+                <id>4</id>
+                <name>AV ресивер Yamaha RX-V6A</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>2859</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\AV ресивер Yamaha RX-V6A\Yamaha_RX_V6A.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\AV ресивер Yamaha RX-V6A\Yamaha_RX_V6A.jpg</img>
+                    <img>resurces\img\AV ресивер Yamaha RX-V6A\Yamaha_RX_V6A_1.jpg</img>
+                    <img>resurces\img\AV ресивер Yamaha RX-V6A\Yamaha_RX_V6A.jpg</img>
+                    <img>resurces\img\AV ресивер Yamaha RX-V6A\Yamaha_RX_V6A_1.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">145</element>
+                    <element type="type" name="Тип: ">AV ресивер</element>
+                    <element type="output" name="Выходы: ">	HDMI x4, коаксиальный x1, оптический x1, линейный x4</element>
+                    <element type="brend" name="Бренд: ">Yamaha</element>
+                    <element type="wight" name="Весс:">	7.1 кг</element>
+                    <element type="frequency_range" name="Воспроизводимый диапазон частот: ">20 - 20000 Гц</element>
+                </extra>
+            </item>
+            <item>
+                <id>5</id>
+                <name>Усилитель интегрированный TAGA Harmony HTA-25B</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>2859</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\Усилитель интегрированный TAGA Harmony HTA-25B\380738271cbfd51f8971180b0e8bf53c.jpeg</main_img>
+                <sub_img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony HTA-25B\380738271cbfd51f8971180b0e8bf53c.jpeg</img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony HTA-25B\aedd842b05c1eb9ea4482ea691c7ab0a.jpeg</img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony HTA-25B\bd8b0064229f9ca6af255a93357af61f.jpeg</img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony HTA-25B\380738271cbfd51f8971180b0e8bf53c.jpeg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">666</element>
+                    <element type="type" name="Тип: ">Интегральный усилитель</element>
+                    <element type="output" name="Выходы: ">Линейный x2</element>
+                    <element type="brend" name="Бренд: ">Taga Harmony</element>
+                    <element type="wight" name="Весс:">4.5 кг</element>
+                    <element type="frequency_range" name="Воспроизводимый диапазон частот: ">20 Гц - 20 кГц</element>
+                </extra>
+            </item>
+            <item>
+                <id>6</id>
+                <name>Усилитель интегрированный TAGA Harmony TTA-1000</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>2859</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\Усилитель интегрированный TAGA Harmony TTA-1000\6748353cc92880d93a4bcbb3b6b47bf4.jpeg</main_img>
+                <sub_img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony TTA-1000\6748353cc92880d93a4bcbb3b6b47bf4.jpeg</img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony TTA-1000\134493fd99b708cb6682d4f9a618b1d2.jpeg</img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony TTA-1000\36873394ddd9adc4a6d0b6195cef81e2.jpeg</img>
+                    <img>resurces\img\Усилитель интегрированный TAGA Harmony TTA-1000\6748353cc92880d93a4bcbb3b6b47bf4.jpeg</img>
+                </sub_img>
+                <extra>
+                    <element type="power" name="Мощность(Вт): ">666</element>
+                    <element type="type" name="Тип: ">Интегральный усилитель</element>
+                    <element type="output" name="Выходы: ">Линейный x2</element>
+                    <element type="brend" name="Бренд: ">Taga Harmony</element>
+                    <element type="wight" name="Весс:">4.5 кг</element>
+                    <element type="frequency_range" name="Воспроизводимый диапазон частот: ">20 Гц - 20 кГц</element>
+                </extra>
+            </item>
         </sub_category>
     </category>
-
+    <!--я хочу плакать T_T помагите.....-->
     <category type="video">
         <sub_category type="video_cameras">
             <item>

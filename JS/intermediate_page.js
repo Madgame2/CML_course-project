@@ -77,7 +77,6 @@ function buil_gui_bar(id){
 
 function move_goods_bar(){
     var elements = document.querySelectorAll('.moviable_block');
-    console.log(elements)
     elements.forEach(function(element) {
         element.style.transform = 'translate(' + off_set + '%, 0px)';
     });

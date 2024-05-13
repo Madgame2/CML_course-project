@@ -6,46 +6,108 @@
     <title>video categories</title>
     <link rel="stylesheet" href="css/Style.css">
     <script> 
-        var xhttp = new XMLHttpRequest();
-        var xml_doc;
-        xhttp.open("GET","../resurces/xml/goods.xml",true);
-    
-        xhttp.send();
-    
-        xhttp.onreadystatechange = function(){
-    
-        if (this.readyState == 4 && this.status == 200) {
-            var xml_text = xhttp.responseText;
-    
-            var parser= new DOMParser();
-    
-            xml_doc=parser.parseFromString(xml_text,"text/xml")
-    
-            
-            console.log(xml_doc);
+function fetchXML(url) {
+  return new Promise(function(resolve, reject) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          resolve(this.responseText);
+        } else {
+          reject(new Error('XMLHttpRequest failed with status ' + this.status));
         }
+      }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+  });
+}
 
-        build_video_examples_bar(xml_doc)
-    }</script>
+function parseXML(xml_text) {
+  return new Promise(function(resolve, reject) {
+    var parser = new DOMParser();
+    var xml_doc = parser.parseFromString(xml_text, "text/xml");
+    if (xml_doc.getElementsByTagName("parsererror").length > 0) {
+      reject(new Error("XML parsing error"));
+    } else {
+      resolve(xml_doc);
+    }
+  });
+}
+
+fetchXML("../resurces/xml/goods.xml")
+  .then(parseXML)
+  .then(function(xml_doc) {
+    console.log(xml_doc);
+    build_video_examples_bar(xml_doc);
+  })
+  .catch(function(error) {
+    console.error("An error occurred:", error);
+  });
+        
+</script>
 </head>
 <body onload="">
     <header>
         <div class="navigation_menu">
             <div class="grid_header">
                 <div style="grid-area: logo;" class="logo_flex">
-                    <a href="" class="logo_flex">
+                    <a href="main_page.html" class="logo_flex">
                         <div class="logo">
-                            <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="35" cy="35.6801" r="35" fill="#D9D9D9"/>
-                            </svg>
+                            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="34" fill="white" stroke="black" stroke-width="2"/>
+                                <line x1="5.56763" y1="52.0952" x2="64.2337" y2="52.0952" stroke="black" stroke-width="2"/>
+                                <path d="M26.6931 30.6306H42.7102C46.5761 30.6306 49.7102 33.7646 49.7102 37.6306V51.8977H19.6931V37.6306C19.6931 33.7646 22.8271 30.6306 26.6931 30.6306Z" fill="white" stroke="black" stroke-width="2"/>
+                                <path d="M19.0908 57.0681H50.3124C53.2634 57.0681 55.7135 54.9235 56.1891 52.1079H13.2141C13.6898 54.9235 16.1399 57.0681 19.0908 57.0681Z" fill="white" stroke="black" stroke-width="2"/>
+                                <path d="M32.2159 53.4885H37.7841C38.7417 53.4885 39.5673 52.9231 39.9452 52.1078H30.0548C30.4326 52.9231 31.2582 53.4885 32.2159 53.4885Z" fill="white" stroke="black" stroke-width="1.69034"/>
+                                <line x1="53.588" y1="52.6992" x2="53.588" y2="30.2276" stroke="black" stroke-width="2"/>
+                                <path d="M54.6989 28.2444H58.9815C61.2197 28.2444 63.0341 30.0588 63.0341 32.297V40.2558C63.0341 43.2808 60.5818 45.733 57.5568 45.733C55.4261 45.733 53.6989 44.0058 53.6989 41.8751V29.2444C53.6989 28.6921 54.1466 28.2444 54.6989 28.2444Z" fill="white" stroke="black" stroke-width="2"/>
+                                <path d="M61.841 41.8609C61.841 43.7798 60.2854 45.3353 58.3665 45.3353C56.4476 45.3353 54.8921 43.7798 54.8921 41.8609C54.8921 39.942 56.4476 38.3865 58.3665 38.3865C60.2854 38.3865 61.841 39.942 61.841 41.8609Z" fill="white" stroke="black" stroke-width="2"/>
+                                <path d="M60.4488 33.608C60.4488 34.7031 59.561 35.5909 58.4659 35.5909C57.3707 35.5909 56.4829 34.7031 56.4829 33.608C56.4829 32.5128 57.3707 31.625 58.4659 31.625C59.561 31.625 60.4488 32.5128 60.4488 33.608Z" fill="white" stroke="black" stroke-width="2"/>
+                                <circle cx="58.267" cy="41.9602" r="1.39205" fill="black"/>
+                                <circle cx="57.8693" cy="48.7216" r="0.994318" fill="black"/>
+                                <line y1="-1" x2="22.4716" y2="-1" transform="matrix(0 -1 -1 0 14.8088 52.6992)" stroke="black" stroke-width="2"/>
+                                <path d="M14.6987 28.2444H10.4113C8.17315 28.2444 6.35873 30.0588 6.35873 32.297V40.253C6.35873 43.2795 8.81221 45.733 11.8387 45.733C13.9705 45.733 15.6987 44.0048 15.6987 41.873V29.2444C15.6987 28.6921 15.251 28.2444 14.6987 28.2444Z" fill="white" stroke="black" stroke-width="2"/>
+                                <path d="M7.55225 41.8609C7.55225 43.7794 9.10825 45.3353 11.0286 45.3353C12.9489 45.3353 14.5049 43.7794 14.5049 41.8609C14.5049 39.9424 12.9489 38.3865 11.0286 38.3865C9.10825 38.3865 7.55225 39.9424 7.55225 41.8609Z" fill="white" stroke="black" stroke-width="2"/>
+                                <path d="M8.94491 33.608C8.94491 34.7027 9.83287 35.5909 10.9291 35.5909C12.0254 35.5909 12.9133 34.7027 12.9133 33.608C12.9133 32.5132 12.0254 31.625 10.9291 31.625C9.83287 31.625 8.94491 32.5132 8.94491 33.608Z" fill="white" stroke="black" stroke-width="2"/>
+                                <ellipse cx="1.39263" cy="1.39205" rx="1.39263" ry="1.39205" transform="matrix(-1 0 0 1 12.5205 40.5681)" fill="black"/>
+                                <ellipse cx="0.994737" cy="0.994318" rx="0.994737" ry="0.994318" transform="matrix(-1 0 0 1 12.5205 47.7273)" fill="black"/>
+                                <circle cx="0.994318" cy="0.994318" r="0.994318" transform="matrix(-1 0 0 1 26.25 59.4602)" fill="black"/>
+                                <circle cx="0.994318" cy="0.994318" r="0.994318" transform="matrix(-1 0 0 1 45.3409 59.4602)" fill="black"/>
+                                <circle cx="0.994318" cy="0.994318" r="0.994318" transform="matrix(-1 0 0 1 40.7671 60.8523)" fill="black"/>
+                                <circle cx="0.994318" cy="0.994318" r="0.994318" transform="matrix(-1 0 0 1 35.9943 61.051)" fill="black"/>
+                                <circle cx="0.994318" cy="0.994318" r="0.994318" transform="matrix(-1 0 0 1 31.0227 60.8523)" fill="black"/>
+                                <rect x="29.0341" y="26.25" width="11.733" height="1.59091" rx="0.795455" fill="black"/>
+                                <rect x="34.304" y="27.3438" width="3.97727" height="1.59091" rx="0.795455" transform="rotate(-90 34.304 27.3438)" fill="black"/>
+                                <path d="M28.1392 13.4233C28.1392 21.6762 30.6946 22.5243 35.1989 23.6648C39.8721 22.3722 41.9602 21.179 41.9602 13.4233" stroke="black" stroke-width="2"/>
+                                <path d="M39.1761 14.1194H43.2529C43.6373 14.1194 43.9489 14.431 43.9489 14.8154V14.8154C43.9489 15.1998 43.6373 15.5114 43.2529 15.5114H39.1761V14.1194Z" fill="black"/>
+                                <path d="M26.25 15.4118C26.25 15.0274 26.5616 14.7158 26.946 14.7158H30.0284V16.1079H26.946C26.5616 16.1079 26.25 15.7962 26.25 15.4118V15.4118Z" fill="black"/>
+                                <rect x="31.0284" y="4.77832" width="7.94318" height="15.5" rx="3.97159" fill="white" stroke="black" stroke-width="2"/>
+                                <rect x="30" y="9" width="3" height="1" rx="0.5" fill="black"/>
+                                <rect x="30" y="16" width="3" height="1" rx="0.5" fill="black"/>
+                                <rect x="30" y="13" width="3" height="1" rx="0.5" fill="black"/>
+                                <rect x="30" y="11" width="3" height="1" rx="0.5" fill="black"/>
+                                <rect x="37" y="9" width="2" height="1" rx="0.5" fill="black"/>
+                                <rect x="37" y="16" width="2" height="1" rx="0.5" fill="black"/>
+                                <rect x="37" y="13" width="2" height="1" rx="0.5" fill="black"/>
+                                <rect x="37" y="11" width="2" height="1" rx="0.5" fill="black"/>
+                                <ellipse cx="48.3092" cy="23.4659" rx="1.97395" ry="1.98864" fill="black"/>
+                                <path d="M48.2055 15.8823C48.3711 15.7212 48.6174 15.6779 48.8274 15.7731L50.5429 16.5507C50.7686 16.653 50.9822 16.7803 51.18 16.9301L51.8702 17.4532C52.5331 17.9556 53.1141 18.5592 53.5921 19.2421L53.956 19.762C54.1181 19.9936 54.2491 20.2456 54.3458 20.5117L54.9327 22.127C55.0111 22.3428 54.9558 22.5849 54.7917 22.7445V22.7445C54.504 23.0244 54.0279 22.9315 53.8649 22.5638L53.2685 21.2187C53.2275 21.1262 53.1779 21.0378 53.1205 20.9547L52.6092 20.2151C52.1293 19.521 51.5592 18.8947 50.9142 18.3532L50.1506 17.7121C50.042 17.6209 49.9223 17.5442 49.7944 17.4836L48.3569 16.8032C48.0003 16.6344 47.922 16.1581 48.2055 15.8823V15.8823Z" fill="black"/>
+                                <path d="M50.6975 13.5508C50.8901 13.3937 51.1608 13.3786 51.3689 13.5133L53.338 14.7872C53.5391 14.9172 53.7275 15.0661 53.9008 15.2317L54.7321 16.0262C55.4495 16.7119 56.0757 17.4882 56.5951 18.3358L57.0573 19.09C57.1998 19.3225 57.316 19.5704 57.4037 19.829L58.0929 21.8612C58.1723 22.0955 58.098 22.355 57.9067 22.5111V22.5111C57.6016 22.76 57.1448 22.6428 56.9961 22.2773L56.2599 20.4686C56.2191 20.3684 56.1705 20.2716 56.1144 20.1791L55.5377 19.2277C55.0135 18.363 54.3957 17.5598 53.6955 16.8326L52.8314 15.9353C52.726 15.826 52.6093 15.7283 52.4832 15.6442L50.7409 14.4815C50.418 14.2661 50.3962 13.7967 50.6975 13.5508V13.5508Z" fill="black"/>
+                                <path d="M52.6643 10.7839C52.8805 10.6257 53.1753 10.635 53.3805 10.8064L55.8042 12.8306C55.9808 12.9781 56.1463 13.1386 56.2992 13.3109L57.3761 14.5234C58.2183 15.4717 58.9639 16.5027 59.6018 17.6009L60.2531 18.7222C60.3845 18.9483 60.4956 19.1857 60.5853 19.4317L61.5789 22.157C61.6705 22.408 61.5851 22.6901 61.3699 22.8476V22.8476C61.0604 23.0741 60.6227 22.9522 60.474 22.5981L59.3336 19.8829L58.5081 18.4492C57.8608 17.3251 57.1187 16.2591 56.2899 15.2632L55.2203 13.9778C55.1152 13.8515 54.9997 13.7344 54.875 13.6278L52.6285 11.7077C52.3405 11.4614 52.358 11.0081 52.6643 10.7839V10.7839Z" fill="black"/>
+                                <ellipse cx="1.95017" cy="1.98864" rx="1.95017" ry="1.98864" transform="matrix(-1 0 0 1 23.0681 21.5168)" fill="black"/>
+                                <path d="M21.2205 15.9219C21.0568 15.7608 20.8134 15.7175 20.6061 15.8126L18.911 16.5904C18.6882 16.6926 18.4772 16.8198 18.2819 16.9696L17.5998 17.4928C16.9449 17.9951 16.371 18.5987 15.8987 19.2816L15.539 19.8018C15.379 20.0332 15.2496 20.2851 15.1541 20.5511L14.5742 22.1666C14.4968 22.3824 14.5514 22.6244 14.7136 22.7841V22.7841C14.9978 23.064 15.468 22.9713 15.629 22.6037L16.2184 21.2582C16.2589 21.1658 16.3078 21.0774 16.3646 20.9943L16.8697 20.2547C17.3438 19.5605 17.907 18.9343 18.5443 18.3927L19.2988 17.7516C19.406 17.6605 19.5243 17.5837 19.6506 17.5232L21.0711 16.8426C21.4233 16.6738 21.5005 16.1977 21.2205 15.9219V15.9219Z" fill="black"/>
+                                <path d="M18.7587 13.5909C18.5684 13.4337 18.3009 13.4183 18.0955 13.5528L16.1489 14.8275C15.9509 14.9572 15.7652 15.1056 15.5945 15.2708L14.7723 16.0662C14.0637 16.7517 13.4451 17.5279 12.932 18.3755L12.4746 19.1308C12.3343 19.3627 12.2198 19.6098 12.1334 19.8678L11.452 21.9015C11.3736 22.1354 11.4473 22.395 11.6364 22.5511V22.5511C11.9378 22.8 12.3883 22.6837 12.5349 22.3191L13.2632 20.5082C13.3034 20.4081 13.3514 20.3115 13.4067 20.2192L13.9767 19.2674C14.4944 18.4028 15.1048 17.5996 15.7965 16.8725L16.6506 15.9749C16.7545 15.8657 16.8696 15.7682 16.994 15.6842L18.7174 14.5201C19.0356 14.3052 19.0564 13.8367 18.7587 13.5909V13.5909Z" fill="black"/>
+                                <path d="M16.8156 10.824C16.6019 10.6657 16.3107 10.6745 16.1085 10.8455L13.7121 12.8713C13.5383 13.0182 13.3755 13.1781 13.2251 13.3496L12.16 14.5634C11.3281 15.5116 10.5916 16.5424 9.96144 17.6405L9.317 18.7635C9.1878 18.9886 9.07845 19.225 8.99021 19.47L8.00767 22.1978C7.91748 22.4482 8.00217 22.73 8.21499 22.8877V22.8877C8.52059 23.1141 8.95205 22.9935 9.09841 22.6408L10.2263 19.9227L11.0419 18.4889C11.6814 17.3648 12.4145 16.299 13.2332 15.3031L14.2905 14.017C14.394 13.8911 14.5078 13.7743 14.6308 13.668L16.8529 11.7454C17.1364 11.5001 17.1181 11.0481 16.8156 10.824V10.824Z" fill="black"/>
+                            </svg>   
                         </div>
                         <div class="logo">Tech & Tune</div>
                     </a>
                 </div>
                 <div style="grid-area: navigation;" class="navigation_flex">
-                    <a href="" class="navigation_element_flex selected"><div class="navigation_element ">Главная</div></a>
+                    <a href="main_page.html" class="navigation_element_flex"><div class="navigation_element ">Главная</div></a>
                     <a href="audio_intemediate_page.html" class="navigation_element_flex"><div class="navigation_element">Аудио</br> техника</div></a>
-                    <a href="video_intemediate_page.html"  class="navigation_element_flex"><div class="navigation_element">Видео</br> техника</div></a>
+                    <a href="video_intemediate_page.html"  class="navigation_element_flex selected"><div class="navigation_element">Видео</br> техника</div></a>
                 </div>
                 <div style="grid-area: search_bar;" class="search_bar_flex">
                     <div class="search_bar">

@@ -4,7 +4,10 @@ var type = params.get("type");
 
 console.log(type);
 
-max_coast_const = 1000;
+var max_coast_const = 1000; 
+var max_power_const = 2000;
+
+if (type=="flavor_enhancers") max_coast_const = 3000
 
 var global_xml;
 
@@ -316,7 +319,9 @@ function build_scrol_example(id,name){
     input_max.type="text";
 
     input_min.value="0";
+
     if(id=="coast") input_max.value=max_coast_const;
+    if(id=="power") input_max.value=max_power_const
 
     input_min.onkeypress="return isNumberKey(event)";
     input_max.onkeypress="return isNumberKey(event)";
@@ -373,7 +378,7 @@ function build_simple_filter(id,name, list){
     var simple_filter =document.createElement("div");
 
     simple_filter.className="simple_filter";
-    simple_filter.classList.add("filte");
+    simple_filter.classList.add("filter");
     simple_filter.id=id;
 
     var head= document.createElement("div");
@@ -634,10 +639,9 @@ function update_goods_list(){
         list_of_id.push(i+1);
     }
 
-    for(var i =0;i<filters.length;i++){
+    for(var i=0;i<filters.length;i++){
+        console.log("i "+i);
         if(filters[i].getAttribute("type")=="scroll"){
-            
-
 
             var min = Number(document.getElementsByClassName("filters_area")[0].getElementsByClassName("filter")[i].getElementsByClassName("min")[0].value);
             var max=Number(document.getElementsByClassName("filters_area")[0].getElementsByClassName("filter")[i].getElementsByClassName("max")[0].value);
@@ -658,7 +662,23 @@ function update_goods_list(){
                     
                 }else{
 
-                    var data = list_of_gooods[j].getElementsByTagName(filters[i].getAttribute("var"));
+                    var data = Number( list_of_gooods[j].getElementsByTagName(filters[i].getAttribute("var")));
+
+
+                    console.log(list_of_gooods[j].getElementsByTagName("extra")[0].getElementsByTagName);
+
+                    for(var k=0 ;k<list_of_gooods[j].getElementsByTagName("element").length;k++){
+
+                        console.log(list_of_gooods[j].getElementsByTagName("element")[k]);
+
+                        if(list_of_gooods[j].getElementsByTagName("element")[k].getAttribute("type")==filters[i].getAttribute("var")){
+                            var data = Number( list_of_gooods[j].getElementsByTagName("element")[k].innerHTML);
+                            console.log(list_of_gooods[j].getElementsByTagName("element")[k].innerHTML);
+                            break;
+                        }
+                    }
+
+                    console.log(data);
 
                     if(!(data>min&&data<max)){
 
@@ -683,19 +703,40 @@ function update_goods_list(){
                 if(input.checked) count_of_active++;
             }
 
+            console.log(list_of_checkbox);
+            console.log(list_of_gooods);
+
+            var my_exml_groop = global_xml.getElementsByTagName("sub_category");
+
+            for(var k = 0;k<my_exml_groop.length;k++){
+                if(my_exml_groop[k].getAttribute("type")==type){
+                    my_exml_groop=my_exml_groop[k];
+                    break;
+                }
+            }
+            
+            var list_of_gooods = my_exml_groop.getElementsByTagName("item");
+
+            console.log(list_of_gooods);
+
+            console.log(count_of_active);
+
             if(count_of_active>0){
                 for(var j=0;j<list_of_gooods.length;j++){
-                    var elements =  global_xml.getElementsByTagName("item")[j].getElementsByTagName("element");
+                    var elements =  my_exml_groop.getElementsByTagName("item")[j].getElementsByTagName("element");
 
                     var variatail;
                     for(var z=0;z<elements.length;z++){
                         if(elements[z].getAttribute("type")==filters[i].getAttribute("var")){
                             variatail=elements[z];
+                            console.log(variatail);
                             break;
                         }
                     }
+
                     if(!list_of_checkbox[variatail.innerHTML]){
-                        console.log("yep")
+                        console.log(list_of_checkbox["Минисистема"]);
+                        console.log(variatail.innerHTML+" "  +list_of_checkbox[variatail.innerHTML])
                         let indexToRemove = list_of_id.indexOf(j+1);
                         if(indexToRemove !== -1){
 

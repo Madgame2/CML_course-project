@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url('resurces/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  }
+  
+  /* Дополнительные начертания шрифта Roboto (например, italic, bold и т. д.) */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('resurces/fonts/roboto/Roboto-Italic.ttf') format('truetype'), /* Укажите путь к файлу шрифта */
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700; /* Для жирного начертания (bold) */
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('resurces/fonts/roboto/Roboto-Bold.ttf') format('truetype'), /* Укажите путь к файлу шрифта */
+  }
+
+  @font-face {
+    font-family: 'open_sans';
+    font-style: normal;
+    font-weight: 700; /* Для жирного начертания (bold) */
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('resurces/fonts/roboto/Roboto-Bold.ttf') format('truetype'), /* Укажите путь к файлу шрифта */
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('resurces/fonts/Open sans/OpenSans-Regular.ttf') format('truetype');
+  }
+  
+  /* Дополнительные начертания шрифта Open Sans (например, italic, bold и т. д.) */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('resurces/fonts/Open sans/OpenSans-Italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700; /* Для жирного начертания (bold) */
+    src: url('resurces/fonts/Open sans/OpenSans-Bold.ttf') format('truetype');
+  }

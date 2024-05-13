@@ -1,6 +1,8 @@
 @import '_mixins.scss';
 
-
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 body, html{
     background-color: $bg;
     flex-wrap: nowrap;
@@ -64,6 +66,7 @@ a{
     text-decoration: none;
     color: $text_collor;
     white-space: nowrap;
+    font-family: "Roboto", sans-serif;
 }
 header{
     position: fixed;
@@ -138,12 +141,12 @@ header{
         @include bg_img;
     }
 }
-
 .welcome_board_contaner{
     color: $text_collor;
     .name_of_site{
         font-size: 96px;
         font-weight: bold;
+        font-family: "Roboto", sans-serif;
     }
     .tagline{
         span{
@@ -181,7 +184,6 @@ header{
         }
     }
 }
-
 .video_contaner{
     color:$text_collor;
     .header{
@@ -433,6 +435,7 @@ header{
                                 margin-top: 5px;
                                 border-radius: 20px;
                                 width: 200px;
+                                height: 200px;
                             }
                         }
                         .name_area{
@@ -704,11 +707,14 @@ header{
             margin-top: 2%;
             justify-content: center;
             align-items: center;
+            height: 460px;
             .main_image{
-                width: 350px;
+                //width: 350px;
+                height: 350px !important;
                 .image{
                     border-radius: 20px;
                     width: 100%;
+                    height: 350px !important;
                 }
             }
             .intaractive{
@@ -735,9 +741,11 @@ header{
                         .img{
                             margin: 5px;
                             width: 80px;
+                            height: 80px;
                             img{
                                 border-radius: 10px;
                                 width: 100%;
+                                height: 100%;
                                 border: 3px solid $catalog_bg;
                             }
                             .active{
@@ -1395,6 +1403,116 @@ header{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .basket{
+        .basket_head{
+            font-size: 20px !important;
+        }
+        main{
+            .goods{
+                width: 90% !important;
+                .select_area{
+                    display: none !important;
+                }
+                .image{
+                    flex: 1 !important;
+                    img{
+                        width: 125px !important;
+                    }
+                }
+                .info{
+                    flex: 1 !important;
+                    .contaner{
+                        margin-top: 5% !important;
+                        .name{
+                            font-size: 15px !important;
+                        }
+                        .status{
+                            .curcle{
+                                width: 10px !important;
+                                height: 10px !important;
+                            }
+                        }
+                        .text{
+                            font-size: 10px !important;
+                        }
+
+                    }
+                }
+                .intaractive{
+                    margin-top: 2%;
+                    flex: none !important;
+                }
+            }
+            .buy_ara{
+                margin: 0 !important;
+                margin-left: 5% !important;
+                margin-right: 5% !important;
+                margin-top: 5% !important;
+                margin-bottom: 2% !important;
+                .area{
+                    .head{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product_window{
+        .extro_info{
+            display: none !important;
+        }
+        main{
+            .main_area{
+                .images{
+                    .main_image{
+                        width: 200px;
+                    }
+                    .intaractive{
+                        display: none !important;
+                    }
+                }
+            }
+            .name{
+                font-size: 20px;
+            }
+            .info{
+                .info_area{
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+            .buy{
+                margin-top: 5%;
+                .status{
+                    margin-bottom: 5px;
+                    .curcle{
+                        width: 15px;
+                        height: 15px;
+                    }
+                    .line{
+                        font-size: 15px;
+                    }
+                }
+                .coast{
+                    margin-top: 2.5%;
+                    .rubels{
+                        font-size: 30px;
+                    }
+                    .kopecks{
+                        font-size: 30px;
+                    }
+                }
+                .button{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    width: 150px !important;
                 }
             }
         }

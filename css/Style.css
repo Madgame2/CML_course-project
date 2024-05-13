@@ -1,3 +1,8 @@
+@charset "UTF-8";
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 body, html {
   background-color: rgb(11, 11, 11);
   flex-wrap: nowrap;
@@ -70,6 +75,7 @@ a {
   text-decoration: none;
   color: #FFFFFF;
   white-space: nowrap;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -170,6 +176,7 @@ header .search_bar form button:hover {
 .welcome_board_contaner .name_of_site {
   font-size: 96px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 .welcome_board_contaner .tagline {
   font-size: 64px;
@@ -433,6 +440,7 @@ header .search_bar form button:hover {
   margin-top: 5px;
   border-radius: 20px;
   width: 200px;
+  height: 200px;
 }
 .intermediate_conataner .examples .goods_contaner .visible_area .goods .contaner .name_area {
   margin-bottom: 15%;
@@ -656,13 +664,15 @@ header .search_bar form button:hover {
   margin-top: 2%;
   justify-content: center;
   align-items: center;
+  height: 460px;
 }
 .product_window main .images .main_image {
-  width: 350px;
+  height: 350px !important;
 }
 .product_window main .images .main_image .image {
   border-radius: 20px;
   width: 100%;
+  height: 350px !important;
 }
 .product_window main .images .intaractive {
   align-items: center;
@@ -687,10 +697,12 @@ header .search_bar form button:hover {
 .product_window main .images .intaractive .small_img .elem .img {
   margin: 5px;
   width: 80px;
+  height: 80px;
 }
 .product_window main .images .intaractive .small_img .elem .img img {
   border-radius: 10px;
   width: 100%;
+  height: 100%;
   border: 3px solid #1F1F1F;
 }
 .product_window main .images .intaractive .small_img .elem .img .active {
@@ -1230,6 +1242,95 @@ header .search_bar form button:hover {
     margin-right: 5%;
     margin-left: 5%;
   }
+  .basket .basket_head {
+    font-size: 20px !important;
+  }
+  .basket main .goods {
+    width: 90% !important;
+  }
+  .basket main .goods .select_area {
+    display: none !important;
+  }
+  .basket main .goods .image {
+    flex: 1 !important;
+  }
+  .basket main .goods .image img {
+    width: 125px !important;
+  }
+  .basket main .goods .info {
+    flex: 1 !important;
+  }
+  .basket main .goods .info .contaner {
+    margin-top: 5% !important;
+  }
+  .basket main .goods .info .contaner .name {
+    font-size: 15px !important;
+  }
+  .basket main .goods .info .contaner .status .curcle {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .basket main .goods .info .contaner .text {
+    font-size: 10px !important;
+  }
+  .basket main .goods .intaractive {
+    margin-top: 2%;
+    flex: none !important;
+  }
+  .basket main .buy_ara {
+    margin: 0 !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-top: 5% !important;
+    margin-bottom: 2% !important;
+  }
+  .basket main .buy_ara .area .head {
+    font-size: 20px;
+  }
+  .product_window .extro_info {
+    display: none !important;
+  }
+  .product_window main .main_area .images .main_image {
+    width: 200px;
+  }
+  .product_window main .main_area .images .intaractive {
+    display: none !important;
+  }
+  .product_window main .name {
+    font-size: 20px;
+  }
+  .product_window main .info .info_area {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .product_window main .buy {
+    margin-top: 5%;
+  }
+  .product_window main .buy .status {
+    margin-bottom: 5px;
+  }
+  .product_window main .buy .status .curcle {
+    width: 15px;
+    height: 15px;
+  }
+  .product_window main .buy .status .line {
+    font-size: 15px;
+  }
+  .product_window main .buy .coast {
+    margin-top: 2.5%;
+  }
+  .product_window main .buy .coast .rubels {
+    font-size: 30px;
+  }
+  .product_window main .buy .coast .kopecks {
+    font-size: 30px;
+  }
+  .product_window main .buy .button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 150px !important;
+  }
 }
 .grid_header {
   margin-left: 0%;
@@ -1350,6 +1451,12 @@ header .search_bar form button:hover {
     grid-template-rows: 50% 20% 5% 25% !important;
     grid-template-columns: 100% !important;
     height: 250px !important;
+  }
+  .product_window .main_area {
+    grid-template-areas: "name" "images" "info" "buy" !important;
+    grid-template-columns: 100% !important;
+    grid-template-rows: 10% 40% 32% 18% !important;
+    margin-bottom: 15% !important;
   }
 }
 .logo_flex {
@@ -1813,4 +1920,54 @@ main {
     flex-direction: row !important;
     flex-wrap: wrap;
   }
+  .basket main {
+    flex-direction: column;
+  }
+  .basket main .goods .elem .contaner {
+    flex-wrap: wrap;
+  }
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("resurces/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+/* Дополнительные начертания шрифта Roboto (например, italic, bold и т. д.) */
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("resurces/fonts/roboto/Roboto-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700; /* Для жирного начертания (bold) */
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("resurces/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "open_sans";
+  font-style: normal;
+  font-weight: 700; /* Для жирного начертания (bold) */
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("resurces/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("resurces/fonts/Open sans/OpenSans-Regular.ttf") format("truetype");
+}
+/* Дополнительные начертания шрифта Open Sans (например, italic, bold и т. д.) */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("resurces/fonts/Open sans/OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700; /* Для жирного начертания (bold) */
+  src: url("resurces/fonts/Open sans/OpenSans-Bold.ttf") format("truetype");
 }

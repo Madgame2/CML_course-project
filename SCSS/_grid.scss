@@ -183,4 +183,19 @@
             }
         }
     }
+
+    .product_window{
+        .main_area{
+        grid-template-areas: 
+        "name"
+        "images"
+        "info"
+        "buy" !important;
+
+        grid-template-columns: 100% !important;
+        grid-template-rows: 10% 40% 32% 18% !important;
+
+        margin-bottom: 15% !important;
+        }   
+    }
 }
