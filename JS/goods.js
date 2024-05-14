@@ -149,12 +149,12 @@ function build_video_examples_bar(xml_doc){
     
         var is_new_id=true;
         for(var j=0;j<used_id[sub_category_id].length;){
-            //if(used_id[sub_category_id][j]==goods_id){
+            if(used_id[sub_category_id][j]==goods_id){
                 var goods_id = getRandomInt(0,video_products[sub_category_id][name_of_video_cateforis[sub_category_id]].length-1);
-                //j=0;
-           // }else{
+                j=0;
+            }else{
                 j++
-            //}
+            }
         }
 
         if(is_new_id){

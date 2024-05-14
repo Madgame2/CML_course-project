@@ -767,23 +767,405 @@
     <!--я хочу плакать T_T помагите.....-->
     <category type="video">
         <sub_category type="video_cameras">
+        <filters>
+                <filter type="scroll" var="coast" name="Цена"></filter>
+                <filter type="simple" var="brend" name="Бренды">
+                    <point id="1">Sony</point>
+                    <point id="2">PANASONIC</point>
+                    <point id="3">Rekam</point>
+                    <point id="4">Canon</point>
+                </filter>
+                <filter type="simple" var="Video_recording_resolutions" name="Разрешения видеосъемки ">
+                    <point id="1">HD</point>
+                    <point id="2">Full HD</point>
+                    <point id="3">2.7K</point>
+                    <point id="4">2.8K</point>
+                    <point id="4">4K</point>
+                </filter>
+            </filters>
             <item>
                 <id>1</id>
-                <name>IP-видеокамера Xiaomi Smart Camera C300 XMC01 (BHR6540GL)</name>
+                <name>Видеокамера Sony HDR-CX405B</name>
+                <status mode="in_stock">В наличии</status>
                 <coast>
-                    <rubles>189</rubles>
-                    <kopecks>00</kopecks>
+                    <rubles>1734</rubles>
+                    <kopecks>90</kopecks>
                 </coast>
-                <main_img>resurces\img\bhr6540gl-smart-camera-c300-xmc01-ip-videokamera-xiaomi-1_200.jpg</main_img>
+                <main_img>resurces\img\Видеокамера Sony HDR-CX405B\49caff77f36f4772c5dc03bb01a58b08.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Sony HDR-CX405B\49caff77f36f4772c5dc03bb01a58b08.jpg</img>
+                    <img>resurces\img\Видеокамера Sony HDR-CX405B\20221125151122620_HDR-CX405.jpg</img>
+                    <img>resurces\img\Видеокамера Sony HDR-CX405B\20221125151127338_HDR-CX405a2.jpg</img>
+                    <img>resurces\img\Видеокамера Sony HDR-CX405B\20221125151136235_HDR-CX405a10.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">HD</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">2.29 Мп</element>
+                    <element type="brend" name="Бренд: ">Sony</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">Memory Stick Micro, microSD, microSDHC, microSDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">Оптическая</element>
+                </extra>
             </item>
             <item>
                 <id>2</id>
-                <name>Видеокамера Sony HDR-CX405B</name>
+                <name>ВИДЕОКАМЕРА PANASONIC HC-V770</name>
+                <status mode="in_stock">В наличии</status>
                 <coast>
-                    <rubles>1401</rubles>
-                    <kopecks>84</kopecks>
+                    <rubles>2400</rubles>
+                    <kopecks>00</kopecks>
                 </coast>
-                <main_img>resurces\img\videokamera_sony_hdr-cx450 (1).png</main_img>
+                <main_img>resurces\img\Видеокамера Panasonic HC-V770\hc-v770_-2-_20200430190410.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V770\hc-v770_-2-_20200430190410.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V770\hc-v770_-5-_20200430190425.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V770\hc-v770_20200430190402.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V770\hc-v770_-3-_20200430190425.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">Full HD</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">BSI MOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">12.76 Мп</element>
+                    <element type="brend" name="Бренд: ">PANASONIC</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>3</id>
+                <name>Видеокамера Rekam DVC-560</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>240</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Rekam DVC-560\rekam_dvc_560_1.webp</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Rekam DVC-560\rekam_dvc_560_1.webp</img>
+                    <img>resurces\img\Видеокамера Rekam DVC-560\rekam_dvc_560_2.webp</img>
+                    <img>resurces\img\Видеокамера Rekam DVC-560\rekam_dvc_560_3.webp</img>
+                    <img>resurces\img\Видеокамера Rekam DVC-560\rekam_dvc_560_4.webp</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">2.7K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">5 Мп</element>
+                    <element type="brend" name="Бренд: ">Rekam</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">SD, SDHC, SDXC  (до 128 ГБ)</element>
+                    <element type="Stabilization" name="Стабилизация: ">электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>4</id>
+                <name>Видеокамера Canon XA60B</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>3140</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Canon XA60B\121106.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Canon XA60B\121106.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XA60B\a_121106_326195.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XA60B\videokamera_canon_xa60b_1.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XA60B\videokamera_canon_xa60b.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">21.14 Мп</element>
+                    <element type="brend" name="Бренд: ">Canon</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">SD, SDHC, SDXC  (x2)</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>5</id>
+                <name>Видеокамера Panasonic HC-V380</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1890</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Panasonic HC-V380\20230110130111840_HCV380K_10.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V380\20230110130111840_HCV380K_10.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V380\20230110130118990_HCV380K_2.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V380\20230110130119111_HCV380K_3.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V380\20230110130123769_HCV380K_6.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">HD</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">2.51 Мп</element>
+                    <element type="brend" name="Бренд: ">Panasonic</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>6</id>
+                <name>Видеокамера Panasonic HC-V785</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1890</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Panasonic HC-V785\panasonic_hc-v785_1.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V785\panasonic_hc-v785_1.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V785\panasonic_hc-v785_3.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V785\panasonic_hc-v785.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-V785\panasonic_hc-v785_1.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">HD</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">2.51 Мп</element>
+                    <element type="brend" name="Бренд: ">Panasonic</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>7</id>
+                <name>Видеокамера Panasonic HC-VXF1</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>2910</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Panasonic HC-VXF1\20230124120155691_hcVXF1.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF1\20230124120155691_hcVXF1.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF1\20230124120102134_hcVXF1-5.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF1\20230124120101958_hcVXF1-6.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF1\20230124120101746_hcVXF1-7.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">8.57 Мп</element>
+                    <element type="brend" name="Бренд: ">Panasonic</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>8</id>
+                <name>Видеокамера Sony FDR-AX700</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>3110</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_1.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_1.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_2.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_3.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">8.57 Мп</element>
+                    <element type="brend" name="Бренд: ">Sony</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>9</id>
+                <name>Видеокамера Canon Legria HF G70</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1810</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Canon Legria HF G70\g_70_1.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_1.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_2.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700_3.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX700\sony_fdr-ax700.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">8.57 Мп</element>
+                    <element type="brend" name="Бренд: ">Canon</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>10</id>
+                <name>Видеокамера Panasonic HC-VXF990</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>3110</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Panasonic HC-VXF990\02_vxf990_m50.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF990\02_vxf990_m50.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF990\03big.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF990\07big.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-VXF990\02_vxf990_m50.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">8.57 Мп</element>
+                    <element type="brend" name="Бренд: ">Panasonic</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>11</id>
+                <name>Видеокамера Rekam DVC-360</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1010</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Rekam DVC-360\6032701755.webp</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Rekam DVC-360\6032701755.webp</img>
+                    <img>resurces\img\Видеокамера Rekam DVC-360\6032701822.webp</img>
+                    <img>resurces\img\Видеокамера Rekam DVC-360\6032701836.webp</img>
+                    <img>resurces\img\Видеокамера Rekam DVC-360\6032701840.webp</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">HD</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">7 Мп</element>
+                    <element type="brend" name="Бренд: ">Rekam</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>12</id>
+                <name>Видеокамера Canon Legria HF G60</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>2000</rubles>
+                    <kopecks>91</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Canon Legria HF G60\593c4dadbdb598aa7821c57138ef5a68.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Canon Legria HF G60\593c4dadbdb598aa7821c57138ef5a68.jpg</img>
+                    <img>resurces\img\Видеокамера Canon Legria HF G60\7899d844f25602e7bd89856a6a30118b.jpg</img>
+                    <img>resurces\img\Видеокамера Canon Legria HF G60\36295d97340f906ef8ee1b0a5d032c79.jpg</img>
+                    <img>resurces\img\Видеокамера Canon Legria HF G60\b38b1f7b81046350f52edc108fd9ec7e.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">7 Мп</element>
+                    <element type="brend" name="Бренд: ">Canon</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>13</id>
+                <name>Видеокамера Canon XC15</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>3920</rubles>
+                    <kopecks>91</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Canon XC15\d188-ma400-fsl_tcm203-1465168.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Canon XC15\d188-ma400-fsl_tcm203-1465168.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XC15\xc15-4k-uhd-camcorder_6_xl.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XC15\xc15-camcorder-back-3q-hires.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XC15\d188-ma400-fsl_tcm203-1465168.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">13.36 Мп</element>
+                    <element type="brend" name="Бренд: ">Canon</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>14</id>
+                <name>Видеокамера Sony FDR-AX53B</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>3680</rubles>
+                    <kopecks>91</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Sony FDR-AX53B\20221128121103747_sony_fdrax53.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX53B\20221128121103747_sony_fdrax53.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX53B\20221128121106191_sony_fdrax53-2.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX53B\20221128121108370_sony_fdrax53-3.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FDR-AX53B\20221128121112367_sony_fdrax53-7.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">Full HD</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">13.36 Мп</element>
+                    <element type="brend" name="Бренд: ">Sony</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+            <item>
+                <id>15</id>
+                <name>Видеокамера Panasonic HC-X20</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>4000</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Panasonic HC-X20\i6c12d7977.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Panasonic HC-X20\i6c12d7977.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-X20\i61ca0e637.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-X20\i60760c78a.jpg</img>
+                    <img>resurces\img\Видеокамера Panasonic HC-X20\ifb919f081.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">13.36 Мп</element>
+                    <element type="brend" name="Бренд: ">Panasonic</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
+            </item>
+             <item>
+                <id>16</id>
+                <name>Видеокамера Canon XA70</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>4000</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Canon XA70\20231012111033795_CanonXA70-2.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Canon XA70\20231012111033795_CanonXA70-2.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XA70\20231012111033917_CanonXA70-3.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XA70\20231012111034036_CanonXA70-4.jpg</img>
+                    <img>resurces\img\Видеокамера Canon XA70\20231012111033795_CanonXA70-2.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="Video_recording_resolutions" name="Разрешения видеосъемки: ">4K</element>
+                    <element type="Matrix_type" name="Тип матрицы : ">CMOS</element>
+                    <element type="Number_of_matrix_points" name="Количество точек матрицы: ">13.36 Мп</element>
+                    <element type="brend" name="Бренд: ">Canon</element>
+                    <element type="supported_memory_cards" name="Поддерживаемые карты памяти:">	Memory Stick PRO Duo, Memory Stick PRO HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC</element>
+                    <element type="Stabilization" name="Стабилизация: ">оптическая, электронная</element>
+                </extra>
             </item>
         </sub_category>
     </category>

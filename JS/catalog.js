@@ -8,6 +8,7 @@ var max_coast_const = 1000;
 var max_power_const = 2000;
 
 if (type=="flavor_enhancers") max_coast_const = 3000
+else if(type =="video_cameras") max_coast_const = 4000
 
 var global_xml;
 
@@ -494,9 +495,8 @@ function build_goods_element(xml_element){
 
     curcle.className="curcle";
     status_cont.className="status_cont";
-
+    
     status_cont.textContent =xml_element.getElementsByTagName("status")[0].innerHTML;
-    //console.log(xml_element.getElementsByTagName("status")[0].innerHTML);
 
     if(xml_element.getElementsByTagName("status")[0].getAttribute("mode")=="in_stock"){
         curcle.style.backgroundColor="#2FD620";
@@ -735,8 +735,6 @@ function update_goods_list(){
                     }
 
                     if(!list_of_checkbox[variatail.innerHTML]){
-                        console.log(list_of_checkbox["Минисистема"]);
-                        console.log(variatail.innerHTML+" "  +list_of_checkbox[variatail.innerHTML])
                         let indexToRemove = list_of_id.indexOf(j+1);
                         if(indexToRemove !== -1){
 
