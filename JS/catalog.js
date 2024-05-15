@@ -9,6 +9,8 @@ var max_power_const = 2000;
 
 if (type=="flavor_enhancers") max_coast_const = 3000
 else if(type =="video_cameras") max_coast_const = 4000
+else if(type =="cameras") max_coast_const = 1600
+else if(type =="monitors") max_coast_const = 3000
 
 var global_xml;
 
@@ -717,8 +719,6 @@ function update_goods_list(){
             
             var list_of_gooods = my_exml_groop.getElementsByTagName("item");
 
-            console.log(list_of_gooods);
-
             console.log(count_of_active);
 
             if(count_of_active>0){
@@ -733,6 +733,8 @@ function update_goods_list(){
                             break;
                         }
                     }
+
+                    console.log("var "+variatail);
 
                     if(!list_of_checkbox[variatail.innerHTML]){
                         let indexToRemove = list_of_id.indexOf(j+1);

@@ -1168,5 +1168,307 @@
                 </extra>
             </item>
         </sub_category>
+        <sub_category type="cameras">
+            <filters>
+                <filter type="scroll" var="coast" name="Цена"></filter>
+                <filter type="simple" var="brend" name="Бренды">
+                    <point id="1">Kodak</point>
+                    <point id="2">Sony</point>
+                </filter>
+                <filter type="simple" var="сamera_type" name="Тип камеры">
+                    <point id="1">Для мгновенной печати</point>
+                    <point id="2">Компакт</point>
+                </filter>
+                <filter type="simple" var="recording_resolutions" name="Разрешения съемки ">
+                    <point id="1">HD</point>
+                    <point id="2">Full HD</point>
+                    <point id="3">2.7K</point>
+                    <point id="4">2.8K</point>
+                    <point id="4">4K</point>
+                </filter>
+            </filters>
+            <item>
+                <id>1</id>
+                <name>Фотоаппарат Kodak Astro Zoom AZ405</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1429</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\Фотоаппарат Kodak Astro Zoom AZ405 (белый)\-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Фотоаппарат Kodak Astro Zoom AZ405 (белый)\-1_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Astro Zoom AZ405 (белый)\-3_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Astro Zoom AZ405 (белый)\-4_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Astro Zoom AZ405 (белый)\-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="recording_resolutions" name="Разрешения съемки: ">Full HD</element>
+                    <element type="Housing_material" name="Материал корпуса: ">Пластик</element>
+                    <element type="Protection" name="Защита: ">Нет</element>
+                    <element type="brend" name="Бренд: ">Kodak</element>
+                    <element type="Viewfinder" name="Видоискатель:">Нет</element>
+                    <element type="сamera_type" name="Тип камеры: ">Компакт</element>
+                </extra>
+            </item>
+            <item>
+                <id>2</id>
+                <name>Фотоаппарат Kodak Pixpro AZ425</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1449</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\Фотоаппарат Kodak Pixpro AZ425\-1_600 (1).jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Фотоаппарат Kodak Pixpro AZ425\-1_600 (1).jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Pixpro AZ425\-3_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Pixpro AZ425\-4_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Pixpro AZ425\-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="recording_resolutions" name="Разрешения съемки: ">Full HD</element>
+                    <element type="Housing_material" name="Материал корпуса: ">Пластик</element>
+                    <element type="Protection" name="Защита: ">Нет</element>
+                    <element type="brend" name="Бренд: ">Kodak</element>
+                    <element type="Viewfinder" name="Видоискатель:">Нет</element>
+                    <element type="сamera_type" name="Тип камеры: ">Компакт</element>
+                </extra>
+            </item>
+            <item>
+                <id>3</id>
+                <name>Видеокамера Sony FX3</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1200</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\Видеокамера Sony FX3\sony_fx3_body_1.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Видеокамера Sony FX3\sony_fx3_body_1.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FX3\sony_fx3_body_3.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FX3\sony_fx3_body.jpg</img>
+                    <img>resurces\img\Видеокамера Sony FX3\sony_fx3_body_1.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="recording_resolutions" name="Разрешения съемки: ">4K</element>
+                    <element type="Housing_material" name="Материал корпуса: ">Пластик</element>
+                    <element type="Protection" name="Защита: ">Нет</element>
+                    <element type="brend" name="Бренд: ">Sony</element>
+                    <element type="Viewfinder" name="Видоискатель:">Нет</element>
+                    <element type="сamera_type" name="Тип камеры: ">Компакт</element>
+                </extra>
+            </item>
+            <item>
+                <id>4</id>
+                <name>Фотоаппарат Kodak Mini Shot 3 C300R</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>449</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Фотоаппарат Kodak Mini Shot 3 C300R (черныйбелый)\-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 3 C300R (черныйбелый)\-1_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 3 C300R (черныйбелый)\-2_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 3 C300R (черныйбелый)\-3_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 3 C300R (черныйбелый)\-4_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="recording_resolutions" name="Разрешения съемки: ">HD</element>
+                    <element type="Housing_material" name="Материал корпуса: ">Пластик</element>
+                    <element type="Protection" name="Защита: ">Да</element>
+                    <element type="brend" name="Бренд: ">Kodak</element>
+                    <element type="Viewfinder" name="Видоискатель:">Нет</element>
+                    <element type="сamera_type" name="Тип камеры: ">Для мгновенной печати</element>
+                </extra>
+            </item>
+            <item>
+                <id>5</id>
+                <name>Фотоаппарат Kodak Mini Shot 2 C210R</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>669</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Фотоаппарат Kodak Mini Shot 2 C210R\c210r-zheltyy-fotoapparat-momentalnoy-pechati-kodak-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 2 C210R\c210r-zheltyy-fotoapparat-momentalnoy-pechati-kodak-1_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 2 C210R\c210r-zheltyy-fotoapparat-momentalnoy-pechati-kodak-2_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 2 C210R\c210r-zheltyy-fotoapparat-momentalnoy-pechati-kodak-3_600.jpg</img>
+                    <img>resurces\img\Фотоаппарат Kodak Mini Shot 2 C210R\c210r-zheltyy-fotoapparat-momentalnoy-pechati-kodak-4_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="recording_resolutions" name="Разрешения съемки: ">HD</element>
+                    <element type="Housing_material" name="Материал корпуса: ">Пластик</element>
+                    <element type="Protection" name="Защита: ">Да</element>
+                    <element type="brend" name="Бренд: ">Kodak</element>
+                    <element type="Viewfinder" name="Видоискатель:">Нет</element>
+                    <element type="сamera_type" name="Тип камеры: ">Для мгновенной печати</element>
+                </extra>
+            </item>
+        </sub_category>
+        <sub_category type="monitors">
+            <filters>
+                <filter type="scroll" var="coast" name="Цена"></filter>
+                <filter type="simple" var="brend" name="Бренды">
+                    <point id="1">SAMSUNG</point>
+                    <point id="2">LG</point>
+                    <point id="3">Xiaomi</point>
+                    <point id="4">Gigabyte</point>
+                </filter>
+                <filter type="simple" var="resolutions" name="Разрешения экранна ">
+                    <point id="1">1920x1080</point>
+                    <point id="2">1920x1200</point>
+                    <point id="3">2560x1080</point>
+                    <point id="4">2560x1440</point>
+                    <point id="4">3440х1440</point>
+                </filter>
+            </filters>
+            <item>
+                <id>1</id>
+                <name>Монитор SAMSUNG S27C310EAI (LS27C310EAIXCI)</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1429</rubles>
+                    <kopecks>90</kopecks>
+                </coast>
+                <main_img>resurces\img\Монитор SAMSUNG S27C310EAI (LS27C310EAIXCI)\s27c310eai-ls27c310eaixci-monitor-samsung-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Монитор SAMSUNG S27C310EAI (LS27C310EAIXCI)\s27c310eai-ls27c310eaixci-monitor-samsung-1_600.jpg</img>
+                    <img>resurces\img\Монитор SAMSUNG S27C310EAI (LS27C310EAIXCI)\s27c310eai-ls27c310eaixci-monitor-samsung-2_600.jpg</img>
+                    <img>resurces\img\Монитор SAMSUNG S27C310EAI (LS27C310EAIXCI)\s27c310eai-ls27c310eaixci-monitor-samsung-3_600.jpg</img>
+                    <img>resurces\img\Монитор SAMSUNG S27C310EAI (LS27C310EAIXCI)\s27c310eai-ls27c310eaixci-monitor-samsung-4_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="resolutions" name="Разрешения экранна: ">1920x1080</element>
+                    <element type="Matrix type" name="Тип матрицы: ">IPS</element>
+                    <element type="Screen_refresh_rate" name="Частота обновления экрана: ">75 Hz</element>
+                    <element type="brend" name="Бренд: ">SAMSUNG</element>
+                    <element type="Screen_aspect_ratio" name="Соотношение сторон экрана :">16:9</element>
+                    <element type="Video_inputs" name="Видеовходы: ">VGA, HDMI</element>
+                </extra>
+            </item>
+            <item>
+                <id>2</id>
+                <name>Монитор Xiaomi Monitor A27i</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>489</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Монитор Xiaomi Monitor A27i\ela5345eu-p27fba-ragl-monitor-xiaomi-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Монитор Xiaomi Monitor A27i\ela5345eu-p27fba-ragl-monitor-xiaomi-1_600.jpg</img>
+                    <img>resurces\img\Монитор Xiaomi Monitor A27i\ela5345eu-p27fba-ragl-monitor-xiaomi-2_600.jpg</img>
+                    <img>resurces\img\Монитор Xiaomi Monitor A27i\ela5345eu-p27fba-ragl-monitor-xiaomi-3_600.jpg</img>
+                    <img>resurces\img\Монитор Xiaomi Monitor A27i\ela5345eu-p27fba-ragl-monitor-xiaomi-6_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="resolutions" name="Разрешения экранна: ">1920x1080</element>
+                    <element type="Matrix type" name="Тип матрицы: ">IPS</element>
+                    <element type="Screen_refresh_rate" name="Частота обновления экрана: ">100 Hz</element>
+                    <element type="brend" name="Бренд: ">Xiaomi</element>
+                    <element type="Screen_aspect_ratio" name="Соотношение сторон экрана :">16:9</element>
+                    <element type="Video_inputs" name="Видеовходы: ">HDMI, DisplayPort</element>
+                </extra>
+            </item>
+            <item>
+                <id>3</id>
+                <name>Монитор LG UltraWide 34WR50QC-B</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1299</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Монитор LG UltraWide 34WR50QC-B\34wr50qc-b-monitor-lg-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Монитор LG UltraWide 34WR50QC-B\34wr50qc-b-monitor-lg-1_600.jpg</img>
+                    <img>resurces\img\Монитор LG UltraWide 34WR50QC-B\34wr50qc-b-monitor-lg-2_600.jpg</img>
+                    <img>resurces\img\Монитор LG UltraWide 34WR50QC-B\34wr50qc-b-monitor-lg-4_600.jpg</img>
+                    <img>resurces\img\Монитор LG UltraWide 34WR50QC-B\34wr50qc-b-monitor-lg-7_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="resolutions" name="Разрешения экранна: ">3440х1440</element>
+                    <element type="Matrix type" name="Тип матрицы: ">VA</element>
+                    <element type="Screen_refresh_rate" name="Частота обновления экрана: ">100 Hz</element>
+                    <element type="brend" name="Бренд: ">LG</element>
+                    <element type="Screen_aspect_ratio" name="Соотношение сторон экрана :">16:9</element>
+                    <element type="Video_inputs" name="Видеовходы: ">HDMI, DisplayPort</element>
+                </extra>
+            </item>
+            <item>
+                <id>4</id>
+                <name>Игровой монитор Gigabyte GS27QC EK</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1234</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Игровой монитор Gigabyte GS27QC EK\-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Игровой монитор Gigabyte GS27QC EK\-1_600.jpg</img>
+                    <img>resurces\img\Игровой монитор Gigabyte GS27QC EK\-2_600.jpg</img>
+                    <img>resurces\img\Игровой монитор Gigabyte GS27QC EK\-4_600.jpg</img>
+                    <img>resurces\img\Игровой монитор Gigabyte GS27QC EK\-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="resolutions" name="Разрешения экранна: ">2560x1440</element>
+                    <element type="Matrix type" name="Тип матрицы: ">VA</element>
+                    <element type="Screen_refresh_rate" name="Частота обновления экрана: ">170 Hz</element>
+                    <element type="brend" name="Бренд: ">Gigabyte</element>
+                    <element type="Screen_aspect_ratio" name="Соотношение сторон экрана :">16:9</element>
+                    <element type="Video_inputs" name="Видеовходы: ">HDMI x 2, DisplayPort</element>
+                </extra>
+            </item>
+            <item>
+                <id>5</id>
+                <name>монитор Samsung Odyssey G5 </name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1395</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\монитор Samsung Odyssey G5\-1_600 (1).jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\монитор Samsung Odyssey G5\-1_600 (1).jpg</img>
+                    <img>resurces\img\монитор Samsung Odyssey G5\-2_600.jpg</img>
+                    <img>resurces\img\монитор Samsung Odyssey G5\-3_600.jpg</img>
+                    <img>resurces\img\монитор Samsung Odyssey G5\-4_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="resolutions" name="Разрешения экранна: ">2560x1440</element>
+                    <element type="Matrix type" name="Тип матрицы: ">IPS</element>
+                    <element type="Screen_refresh_rate" name="Частота обновления экрана: ">165 Hz</element>
+                    <element type="brend" name="Бренд: ">SAMSUNG</element>
+                    <element type="Screen_aspect_ratio" name="Соотношение сторон экрана :">16:9</element>
+                    <element type="Video_inputs" name="Видеовходы: ">HDMI, DisplayPort</element>
+                </extra>
+            </item>
+            <item>
+                <id>6</id>
+                <name>Монитор Samsung S24C360EAI</name>
+                <status mode="in_stock">В наличии</status>
+                <coast>
+                    <rubles>1395</rubles>
+                    <kopecks>00</kopecks>
+                </coast>
+                <main_img>resurces\img\Монитор Samsung S24C360EAI\s24c360eai-ls24c360eaixci-monitor-samsung-1_600.jpg</main_img>
+                <sub_img>
+                    <img>resurces\img\Монитор Samsung S24C360EAI\s24c360eai-ls24c360eaixci-monitor-samsung-1_600.jpg</img>
+                    <img>resurces\img\Монитор Samsung S24C360EAI\s24c360eai-ls24c360eaixci-monitor-samsung-2_600.jpg</img>
+                    <img>resurces\img\Монитор Samsung S24C360EAI\s24c360eai-ls24c360eaixci-monitor-samsung-3_600.jpg</img>
+                    <img>resurces\img\Монитор Samsung S24C360EAI\s24c360eai-ls24c360eaixci-monitor-samsung-5_600.jpg</img>
+                </sub_img>
+                <extra>
+                    <element type="resolutions" name="Разрешения экранна: ">1920x1080</element>
+                    <element type="Matrix type" name="Тип матрицы: ">VA</element>
+                    <element type="Screen_refresh_rate" name="Частота обновления экрана: ">75 Hz</element>
+                    <element type="brend" name="Бренд: ">SAMSUNG</element>
+                    <element type="Screen_aspect_ratio" name="Соотношение сторон экрана :">16:9</element>
+                    <element type="Video_inputs" name="Видеовходы: ">HDMI, DisplayPort</element>
+                </extra>
+            </item>
+        </sub_category>
     </category>
 </product>
