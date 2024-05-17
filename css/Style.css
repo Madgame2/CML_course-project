@@ -672,7 +672,7 @@ header .search_bar form button:hover {
 .product_window main .images .main_image .image {
   border-radius: 20px;
   width: 100%;
-  height: 350px !important;
+  height: 350px;
 }
 .product_window main .images .intaractive {
   align-items: center;
@@ -1330,6 +1330,12 @@ header .search_bar form button:hover {
     margin-right: auto;
     text-align: center;
     width: 150px !important;
+  }
+  .product_window main .images {
+    height: 200px;
+  }
+  .product_window main .images .main_image .image {
+    height: 200px;
   }
 }
 .grid_header {

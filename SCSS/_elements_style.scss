@@ -714,7 +714,7 @@ header{
                 .image{
                     border-radius: 20px;
                     width: 100%;
-                    height: 350px !important;
+                    height: 350px;
                 }
             }
             .intaractive{
@@ -1516,5 +1516,11 @@ header{
                 }
             }
         }
+    }
+    .product_window main .images{
+        height: 200px;
+    }
+    .product_window main .images .main_image .image{
+        height: 200px;
     }
 }
